@@ -78,6 +78,7 @@ const projects = [
     track: "strategic",
     filters: ["growth", "creator", "product"],
     featured: true,
+    timeline: { en: "Initiated 2021", cn: "项目发起：2021年" },
     tags: ["0-to-1 product", "Campus GTM", "Community growth", "BD", "Demo video"],
     cn: "围绕校园生活方式产品，整理了市场洞察、GTM、社群增长、BD、产品 Demo 与小程序早期体验材料。",
     summary:
@@ -113,6 +114,7 @@ const projects = [
     track: "strategic",
     filters: ["creator", "product", "content"],
     featured: true,
+    timeline: { en: "Initiated 2018", cn: "项目发起：2018年" },
     tags: ["Founder", "Creator collaboration", "Film resources", "Pitch", "Ops model", "Business plan"],
     cn: "影视协作与资源共享平台项目，涵盖创作者协作、制作资源整合、运营模型、商业计划和路演表达。",
     summary:
@@ -145,16 +147,17 @@ const projects = [
     category: "Social Product / Community",
     track: "strategic",
     filters: ["growth", "product", "creator"],
+    timeline: { en: "Launched 2023", cn: "项目时间：2023年" },
     tags: ["Social product", "User insight", "Community activation", "Product education"],
-    cn: "技能交换社交产品，结合官网、小红书公开视频、产品教育、社区激活和线上/线下转化进行表达。",
+    cn: "已上线的技能交换社交产品，结合官网、小红书公开视频、产品教育、社区激活和线上/线下转化进行表达。",
     summary:
-      "A youth social-product concept framed through a live website, public RED / Xiaohongshu proof, explainer videos, user education, community behavior, and activation mechanics.",
+      "A launched youth skill-exchange social product presented through its live website, public RED / Xiaohongshu proof, explainer videos, user education, and activation materials.",
     caseNotes: {
-      context: "Skill-exchange social product for young users, combining online education and community activation.",
-      role: "Worked on product positioning, public-facing website proof, user education videos, and social distribution.",
+      context: "Launched skill-exchange social product for young users, combining product education, community activation, and social proof.",
+      role: "Worked on product positioning, public-facing launch materials, user education videos, and social distribution.",
       output: "Live website, RED / Xiaohongshu proof, product videos, introduction material, and source folder.",
-      signal: "Live product website · RED / Xiaohongshu proof · onboarding and product-education content.",
-      signalCn: "具备官网、公开视频证据和产品教育内容，可呈现从产品定位到用户理解的表达。",
+      signal: "Launched product website · RED / Xiaohongshu proof · onboarding and product-education content.",
+      signalCn: "已上线产品，具备官网、公开视频证据和产品教育内容。",
     },
     media: [
       { id: "1BrNToM6hwdvyEY6DDGM1iOTfQGPA7Oe2", alt: "SWAP 2023 video thumbnail" },
@@ -341,6 +344,7 @@ const projects = [
     category: "Core Founding Member / Product Strategy",
     track: "strategic",
     filters: ["product", "growth"],
+    timeline: { en: "Project year 2020", cn: "项目时间：2020年" },
     tags: ["Core founding member", "Recommendation", "Personalization", "Marketing system", "Product strategy"],
     cn: "作为核心创始成员参与的推荐与营销系统概念，侧重个性化、产品策略、用户触达和营销系统思维。",
     summary:
@@ -539,6 +543,11 @@ const buildProjectCard = (project, index) => {
         <div class="category-pill">${project.category}</div>
         <div class="project-tags">${tags}</div>
         <h3>${project.title}</h3>
+        ${
+          project.timeline
+            ? `<p class="project-timeline">${project.timeline.en}<span>${project.timeline.cn}</span></p>`
+            : ""
+        }
         <p class="case-summary">${project.summary}</p>
         ${caseBrief}
         <p class="cn-note">${project.cn}</p>
@@ -646,6 +655,7 @@ const renderPreviewList = () => {
 const setEmbeddedPreview = (index) => {
   const item = previewItems[index];
   const frame = document.getElementById("preview-frame");
+  const frameWrap = frame?.closest(".preview-frame-wrap");
   const title = document.getElementById("preview-title");
   const description = document.getElementById("preview-description");
   const cover = document.getElementById("preview-cover-img");
@@ -659,7 +669,9 @@ const setEmbeddedPreview = (index) => {
     button.classList.toggle("is-active", Number(button.dataset.previewIndex) === index);
   });
 
-  frame.src = item.url;
+  const useThumbnailFallback = window.location.protocol === "file:";
+  frameWrap?.classList.toggle("is-thumbnail-fallback", useThumbnailFallback);
+  frame.src = useThumbnailFallback ? "about:blank" : item.url;
   title.textContent = item.title;
   description.textContent = item.description;
   cover.src = thumb(item.cover, 1600);
