@@ -257,7 +257,7 @@ const projects = [
       signalCn: "30 美金低成本完成的第一个微电影作品，覆盖编剧、导演、剪辑与包装。",
     },
     media: [
-      { id: "1wVnot_lS6ddUPtxO22dRApu5aEfxaW5l", alt: "Mirror short film thumbnail" },
+      { id: "14ChEuJG9I8DkBbOnZS5XZf2pY5CPDbXE", alt: "Early video works cinematic street frame" },
       { id: "1v2OwWs2D_ZXPvrld6jMnU9oxL6DdSEZU", alt: "Hong Kong VLOG thumbnail" },
     ],
     preview: {
