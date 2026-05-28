@@ -78,7 +78,7 @@ const projects = [
     track: "strategic",
     filters: ["growth", "creator", "product"],
     featured: true,
-    timeline: { en: "Initiated 2021", cn: "项目发起：2021年" },
+    timeline: "Initiated in 2021",
     tags: ["0-to-1 product", "Campus GTM", "Community growth", "BD", "Demo video"],
     cn: "围绕校园生活方式产品，整理了市场洞察、GTM、社群增长、BD、产品 Demo 与小程序早期体验材料。",
     summary:
@@ -114,7 +114,7 @@ const projects = [
     track: "strategic",
     filters: ["creator", "product", "content"],
     featured: true,
-    timeline: { en: "Initiated 2018", cn: "项目发起：2018年" },
+    timeline: "Initiated in 2018",
     tags: ["Founder", "Creator collaboration", "Film resources", "Pitch", "Ops model", "Business plan"],
     cn: "影视协作与资源共享平台项目，涵盖创作者协作、制作资源整合、运营模型、商业计划和路演表达。",
     summary:
@@ -147,7 +147,7 @@ const projects = [
     category: "Social Product / Community",
     track: "strategic",
     filters: ["growth", "product", "creator"],
-    timeline: { en: "Launched 2023", cn: "项目时间：2023年" },
+    timeline: "Launched in 2023",
     tags: ["Social product", "User insight", "Community activation", "Product education"],
     cn: "已上线的技能交换社交产品，结合官网、小红书公开视频、产品教育、社区激活和线上/线下转化进行表达。",
     summary:
@@ -344,7 +344,7 @@ const projects = [
     category: "Core Founding Member / Product Strategy",
     track: "strategic",
     filters: ["product", "growth"],
-    timeline: { en: "Project year 2020", cn: "项目时间：2020年" },
+    timeline: "Developed in 2020",
     tags: ["Core founding member", "Recommendation", "Personalization", "Marketing system", "Product strategy"],
     cn: "作为核心创始成员参与的推荐与营销系统概念，侧重个性化、产品策略、用户触达和营销系统思维。",
     summary:
@@ -545,7 +545,7 @@ const buildProjectCard = (project, index) => {
         <h3>${project.title}</h3>
         ${
           project.timeline
-            ? `<p class="project-timeline">${project.timeline.en}<span>${project.timeline.cn}</span></p>`
+            ? `<p class="project-timeline">${project.timeline}</p>`
             : ""
         }
         <p class="case-summary">${project.summary}</p>
