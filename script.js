@@ -322,7 +322,7 @@ const projects = [
       signalCn: "通过构图、氛围、空间与电影感画面呈现视觉判断力。",
     },
     media: [
-      { id: "199bN4Ymq9XiDAhAUHGBorzUoWx8TCMz2", alt: "Photography work selected mountain frame" },
+      { id: "1lFptt9FCqFUUJpGYDZINaJjArX48Ocfj", alt: "Photography work mountain lake frame" },
       { id: "1ZboiXkctYxBm9yLmKNW1wMRIdaXhdH7H", alt: "Photography work landscape" },
     ],
     preview: {
@@ -332,7 +332,7 @@ const projects = [
     },
     links: [
       { label: "Photography archive", url: driveFolder("17AvL8OkWYqEjJLYHq9vMtenRYdOEV_m0") },
-      { label: "Mountain light selection", url: driveFile("199bN4Ymq9XiDAhAUHGBorzUoWx8TCMz2") },
+      { label: "Mountain lake selection", url: driveFile("1lFptt9FCqFUUJpGYDZINaJjArX48Ocfj") },
       { label: "Landscape selection", url: driveFile("1ZboiXkctYxBm9yLmKNW1wMRIdaXhdH7H") },
     ],
   },
