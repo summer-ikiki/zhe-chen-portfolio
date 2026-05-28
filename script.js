@@ -728,37 +728,34 @@ const applyProjectFilter = (filter = "all") => {
 };
 
 const initFilters = () => {
-  document.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-filter]");
-
-    if (!button) {
-      return;
-    }
-
-    applyProjectFilter(button.dataset.filter);
+  document.querySelectorAll("[data-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      applyProjectFilter(button.dataset.filter);
+    });
   });
 };
 
 const initCapabilityLinks = () => {
-  document.addEventListener("click", (event) => {
-    const link = event.target.closest("[data-jump-filter]");
+  document.querySelectorAll("[data-jump-filter]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+        return;
+      }
 
-    if (!link || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
-      return;
-    }
-
-    event.preventDefault();
-    applyProjectFilter(link.dataset.jumpFilter);
-    document.getElementById("work")?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+      event.preventDefault();
+      applyProjectFilter(link.dataset.jumpFilter);
+      document.getElementById("work")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     });
   });
 };
 
 const initNewTabLinks = () => {
   document.addEventListener("click", (event) => {
-    const link = event.target.closest('a[target="_blank"]');
+    const clickedElement = event.target instanceof Element ? event.target : event.target?.parentElement;
+    const link = clickedElement?.closest('a[target="_blank"]');
 
     if (
       !link ||
