@@ -74,14 +74,16 @@ const capabilityCopy = {
 const projects = [
   {
     title: "Ditto — International Campus Growth System",
+    displayOrder: 10,
     category: "Marketing Director & Growth Consultant",
     track: "strategic",
     filters: ["growth", "product", "creator"],
     featured: true,
     tags: ["Campus growth", "Funnel analytics", "Channel attribution", "Ambassador channels", "Product growth"],
-    cn: "以安全口径呈现 Ditto 工作项目：校园增长、渠道归因、漏斗分析、大使体系和产品增长协作。",
+    quick: ["Marketing Director & Growth Consultant", "Campus acquisition and activation", "Funnel tracking and channel attribution"],
+    cn: "Ditto 工作项目，呈现校园增长、渠道归因、漏斗分析、大使体系和产品增长协作。",
     summary:
-      "A portfolio-safe work snapshot of a multi-campus acquisition and activation system for a student dating product, connecting field marketing, funnel analytics, ambassador channels, and product-growth feedback loops.",
+      "A multi-campus acquisition and activation system for a student dating product, connecting field marketing, funnel analytics, ambassador channels, and product-growth feedback loops.",
     caseNotes: {
       rows: [
         {
@@ -94,25 +96,27 @@ const projects = [
         },
         {
           label: "Systems built",
-          text: "UTM attribution, campus/channel reporting, funnel diagnosis, ambassador tracking, and portfolio-safe growth readouts for product and marketing decisions.",
+          text: "UTM attribution, campus/channel reporting, funnel diagnosis, ambassador tracking, and growth readouts for product and marketing decisions.",
         },
       ],
       signal: "Multi-campus growth system · funnel tracking · channel attribution · product-growth collaboration.",
-      signalCn: "以安全口径呈现校园增长、渠道归因、漏斗分析和产品增长协作能力。",
+      signalCn: "呈现校园增长、渠道归因、漏斗分析和产品增长协作能力。",
     },
-    media: [{ src: "./assets/project-covers/ditto-homepage.png", alt: "Ditto public website homepage", cover: true }],
+    media: [{ src: "./assets/project-covers/ditto-homepage.png", alt: "Ditto public website homepage", cover: true, wide: true }],
     links: [{ label: "Official website", url: "https://ditto.ai" }],
   },
   {
     title: "ENC Mobile — Marketing & Business Development",
+    displayOrder: 30,
     category: "Marketing & Business Development",
     track: "strategic",
     filters: ["growth", "product"],
     featured: true,
     tags: ["Regional BD", "Student market", "Partner growth", "Local channels", "Product coordination"],
-    cn: "以安全口径呈现 ENC Mobile 工作项目：市场营销、商务拓展、学生市场、渠道合作和产品/技术团队协作。",
+    quick: ["Marketing & Business Development", "Student-market expansion", "Partner channels and product coordination"],
+    cn: "ENC Mobile 工作项目，呈现市场营销、商务拓展、学生市场、渠道合作和产品/技术团队协作。",
     summary:
-      "A public-safe work snapshot covering regional marketing, business development, student-market expansion, partner channels, and product/technical team coordination.",
+      "Regional marketing and business-development work across student-market expansion, partner channels, local growth, and product/technical team coordination.",
     caseNotes: {
       rows: [
         {
@@ -129,21 +133,23 @@ const projects = [
         },
       ],
       signal: "Marketing & BD ownership · student-market expansion · partner/channel development · product-team coordination.",
-      signalCn: "以安全口径呈现市场拓展、学生市场增长、合作伙伴渠道和跨团队协作能力。",
+      signalCn: "呈现市场拓展、学生市场增长、合作伙伴渠道和跨团队协作能力。",
     },
-    media: [{ src: "./assets/project-covers/encmobile-homepage.png", alt: "ENC Mobile public website homepage", cover: true }],
+    media: [{ src: "./assets/project-covers/encmobile-unlimited-plan.png", alt: "ENC Mobile Unlimited Plan campaign banner", cover: true, wide: true }],
     links: [{ label: "Official website", url: "https://www.encmobile.com/" }],
   },
   {
-    title: "PandaPal x Hypie — Overseas Brand Growth Marketing Agency",
+    title: "HYPIE Marketing — Overseas Brand Growth Agency",
+    displayOrder: 40,
     category: "Founder / Overseas Brand Growth / Creator & Community",
     track: "strategic",
-    filters: ["growth", "creator", "content", "product"],
+    filters: ["growth", "creator", "content"],
     featured: true,
     tags: ["Founder", "Overseas growth", "Brand marketing", "Creator network", "Local activation"],
-    cn: "面向企业和品牌出海增长的营销机构与社区增长体系，以安全口径呈现 Founder 角色、品牌增长、创作者资源和本地化触达能力。",
+    quick: ["Founder", "Overseas brand growth agency", "Creator and community resource system"],
+    cn: "面向企业和品牌出海增长的营销机构项目，呈现品牌增长、创作者资源、本地化触达和跨平台激活能力。",
     summary:
-      "A founder-led overseas growth marketing agency and community ecosystem for brands expanding into North American consumer, student, and Chinese-speaking markets, combining brand strategy, creator resources, social content, and local-market activation.",
+      "An overseas growth marketing agency for brands expanding into North American consumer, student, and Chinese-speaking markets, combining brand strategy, creator resources, social content, and local-market activation.",
     caseNotes: {
       rows: [
         {
@@ -152,7 +158,7 @@ const projects = [
         },
         {
           label: "Ownership",
-          text: "Founder; built the agency positioning, service packaging, community/creator resource system, partner narrative, and early product/community infrastructure.",
+          text: "Founder; built the agency positioning, service packaging, creator/community resource system, partner narrative, and growth-service model.",
         },
         {
           label: "Systems built",
@@ -160,26 +166,21 @@ const projects = [
         },
       ],
       signal: "Founder ownership · overseas brand-growth agency · creator/community resource system · cross-platform activation.",
-      signalCn: "以安全口径呈现创始人角色、品牌出海增长、创作者/社区资源系统和跨平台激活能力。",
+      signalCn: "呈现创始人角色、品牌出海增长、创作者/社区资源系统和跨平台激活能力。",
     },
-    media: [
-      { id: "1d8T0Lv6JAeLc-AL_2hhNQaJPYA9HqAG_", alt: "PandaPal campus community visual" },
-      { src: "./assets/project-covers/hypie-agency-cover.png", alt: "Hypie overseas growth marketing agency cover", cover: true },
-    ],
-    links: [
-      { label: "Source folder", url: driveFolder("1XTy1eNbYn6JsrrFu58C8jezgsiPN59km") },
-      { label: "PandaPal Instagram", url: "https://www.instagram.com/pandapal_us?igsh=NTc4MTIwNjQ2YQ==" },
-      { label: "PandaPal FM / Linktree", url: "https://linktr.ee/pandapalfm?utm_source=qr_code" },
-    ],
+    media: [{ src: "./assets/project-covers/hypie-agency-cover.png", alt: "Hypie overseas growth marketing agency cover" }],
+    links: [],
   },
   {
     title: "PandaPal",
+    displayOrder: 20,
     category: "Founder / Product Marketing / Growth",
     track: "strategic",
     filters: ["growth", "creator", "product"],
     featured: true,
     timeline: "Initiated in 2021",
     tags: ["0-to-1 product", "Campus GTM", "Community growth", "BD", "Demo video"],
+    quick: ["Founder / Product Marketing", "Campus product and GTM", "Full demo, business, and marketing package"],
     cn: "围绕校园生活方式产品，整理了市场洞察、GTM、社群增长、BD、产品 Demo 与小程序早期体验材料。",
     summary:
       "A campus lifestyle product package developed from market insight to business plan, marketing plan, product video, and mini-app early-access materials.",
@@ -198,24 +199,29 @@ const projects = [
       title: "PandaPal English Product Video",
       description: "Product storytelling, campus positioning, and GTM materials.",
       url: drivePreview("1Injvll7j0QcT2IopAMZhHdu_tzougVnL"),
+      coverOnly: true,
     },
-    linkLimit: 5,
+    linkLimit: 7,
     links: [
       { label: "English product video", url: driveFile("1Injvll7j0QcT2IopAMZhHdu_tzougVnL") },
       { label: "Chinese product video", url: driveFile("12MffxJrdn4ZPEElJLaHPM2rOrZ_-YBw4") },
       { label: "Business plan", url: driveFile("1IczD8hdSjMkvNSnOeVLAIBM7E2QdOEsI") },
       { label: "Marketing plan", url: driveFile("14kbBTxT_2rZFUvbj7Af2IYLNygvIxRYf") },
+      { label: "PandaPal Instagram", url: "https://www.instagram.com/pandapal_us?igsh=NTc4MTIwNjQ2YQ==" },
+      { label: "PandaPal FM / Linktree", url: "https://linktr.ee/pandapalfm?utm_source=qr_code" },
       { label: "Source folder", url: driveFolder("1XTy1eNbYn6JsrrFu58C8jezgsiPN59km") },
     ],
   },
   {
     title: "Legend Co-shooting",
+    displayOrder: 60,
     category: "Founder / Film Collaboration Venture",
     track: "strategic",
     filters: ["creator", "product", "content"],
     featured: true,
     timeline: "Initiated in 2018",
     tags: ["Founder", "Creator collaboration", "Film resources", "Pitch", "Ops model", "Business plan"],
+    quick: ["Founder", "Film collaboration venture", "Awarded Chinese plan and bilingual pitch materials"],
     cn: "影视协作与资源共享平台项目，涵盖创作者协作、制作资源整合、运营模型、商业计划和路演表达。",
     summary:
       "A film-resource collaboration venture connecting creator workflows, shared production resources, operating structure, and business storytelling.",
@@ -234,6 +240,7 @@ const projects = [
       title: "Legend Co-shooting Pitch Video",
       description: "One-minute pitch showing film-collaboration positioning and product narrative.",
       url: drivePreview("1rPg4Ro-oejSKkLX-Q12eL37DCPY5Cofl"),
+      coverOnly: true,
     },
     links: [
       { label: "Pitch video", url: driveFile("1rPg4Ro-oejSKkLX-Q12eL37DCPY5Cofl") },
@@ -244,11 +251,13 @@ const projects = [
   },
   {
     title: "SWAP",
+    displayOrder: 50,
     category: "Social Product / Community",
     track: "strategic",
     filters: ["growth", "product", "creator"],
     timeline: "Launched in 2023",
     tags: ["Social product", "User insight", "Community activation", "Product education"],
+    quick: ["Product positioning and launch materials", "Live skill-exchange social product", "Website, RED proof, and education videos"],
     cn: "已上线的技能交换社交产品，结合官网、小红书公开视频、产品教育、社区激活和线上/线下转化进行表达。",
     summary:
       "A launched youth skill-exchange social product presented through its live website, public RED / Xiaohongshu proof, explainer videos, user education, and activation materials.",
@@ -267,6 +276,8 @@ const projects = [
       title: "SWAP 2023 Video",
       description: "Social-product positioning and onboarding material.",
       url: drivePreview("1BrNToM6hwdvyEY6DDGM1iOTfQGPA7Oe2"),
+      openUrl: driveFile("1BrNToM6hwdvyEY6DDGM1iOTfQGPA7Oe2"),
+      coverOnly: true,
     },
     links: [
       { label: "Live website", url: "https://swapapp.club/" },
@@ -284,6 +295,7 @@ const projects = [
     filters: ["creator", "growth"],
     featured: true,
     tags: ["Creator strategy", "Audience positioning", "Campaign", "Social content"],
+    quick: ["Creator strategy", "Audience and campaign system", "Cross-platform content direction"],
     cn: "围绕个人影响力、受众定位、campaign 设计、社媒内容方向和跨平台内容系统展开。",
     summary:
       "Strategy work around audience positioning, creator voice, campaign design, social-media direction, and cross-platform content systems.",
@@ -316,6 +328,7 @@ const projects = [
     track: "creative",
     filters: ["content", "visual"],
     tags: ["Director", "Producer", "Storytelling", "Poster system", "Short film"],
+    quick: ["Director / Producer", "Short-film production", "Public film and poster system"],
     cn: "从故事、拍摄、制作到视觉包装的短片作品线，呈现叙事判断、制作推进、海报视觉系统和公开视频入口。",
     summary:
       "A short-film project showing creative direction, end-to-end production ownership, visual packaging, and narrative judgment.",
@@ -349,6 +362,7 @@ const projects = [
     track: "creative",
     filters: ["content"],
     tags: ["Director", "Writer", "Editor", "VLOG", "Documentary"],
+    quick: ["Writer / Director / Editor", "Early video archive", "$30 first micro short film"],
     cn: "早期影像作品档案，包含 30 美金低成本微电影《Mirror》、VLOG、纪录/文化类视频和学生作品练习。",
     summary:
       "A hands-on video archive anchored by Mirror, my first micro short film made on a $30 budget, alongside VLOG, documentary-style content, and student production exercises.",
@@ -367,6 +381,7 @@ const projects = [
       title: "Mirror Short Film",
       description: "My first micro short film, made on a $30 budget, with writing, directing, and editing by me.",
       url: drivePreview("1wVnot_lS6ddUPtxO22dRApu5aEfxaW5l"),
+      coverOnly: true,
     },
     links: [
       { label: "Mirror short film", url: driveFile("1wVnot_lS6ddUPtxO22dRApu5aEfxaW5l") },
@@ -382,6 +397,7 @@ const projects = [
     filters: ["product", "visual"],
     featured: true,
     tags: ["IA", "Wireframe", "Brand system", "Content hierarchy"],
+    quick: ["Product / Web Strategy", "IA and brand system", "Website strategy package"],
     cn: "网站策略系统，覆盖信息架构、内容层级、品牌表达、视觉语言和 wireframe。",
     summary:
       "A website-strategy system covering product-marketing structure, information architecture, content hierarchy, brand language, and execution taste.",
@@ -414,6 +430,7 @@ const projects = [
     track: "creative",
     filters: ["visual", "content"],
     tags: ["Photography", "Composition", "Mood", "Cinematic framing"],
+    quick: ["Photography / Visual curation", "Travel and observational archive", "Composition and cinematic framing"],
     cn: "摄影作品用于呈现审美、构图、现场感、空间氛围和视觉判断力。",
     summary:
       "A selected visual archive showing composition, mood, place, and cinematic framing across travel and observational photography.",
@@ -446,6 +463,7 @@ const projects = [
     filters: ["product", "growth"],
     timeline: "Developed in 2020",
     tags: ["Core founding member", "Recommendation", "Personalization", "Marketing system", "Product strategy"],
+    quick: ["Core founding member", "Recommendation and marketing system", "Personalization and campaign logic"],
     cn: "作为核心创始成员参与的推荐与营销系统概念，侧重个性化、产品策略、用户触达和营销系统思维。",
     summary:
       "A recommendation and marketing-system concept focused on personalization, product strategy, user targeting, and campaign logic.",
@@ -473,6 +491,7 @@ const projects = [
     track: "strategic",
     filters: ["credentials"],
     tags: ["Google Analytics", "Hootsuite", "Credential", "Digital marketing"],
+    quick: ["Tool credentials", "Analytics and social tools", "GA and Hootsuite foundations"],
     cn: "证书区保持轻量，用于补充增长、数据反馈、社媒工具和数字营销基础。",
     summary:
       "Selected analytics and social-media credentials that complement marketing, growth, and operations work.",
@@ -500,14 +519,20 @@ const projects = [
   },
 ];
 
-const previewItems = projects
+const orderedProjects = projects
+  .map((project, index) => ({ project, index }))
+  .sort((a, b) => (a.project.displayOrder ?? a.index + 1000) - (b.project.displayOrder ?? b.index + 1000));
+
+const previewItems = orderedProjects
+  .map(({ project }) => project)
   .filter((project) => project?.preview)
   .slice(0, 8)
   .map((project) => ({
     ...project.preview,
     cover: project.media[0]?.id,
     coverSrc: project.media[0]?.src,
-    openUrl: project.links[0]?.url,
+    coverOnly: project.preview.coverOnly,
+    openUrl: project.preview.openUrl || project.links[0]?.url,
   }));
 
 const galleryItems = [
@@ -596,7 +621,13 @@ const initHero = () => {
 };
 
 const buildProjectCard = (project, index) => {
-  const mediaClass = project.media.length === 1 ? "card-media single" : "card-media";
+  const mediaClass = [
+    "card-media",
+    project.media.length === 1 ? "single" : "",
+    project.media.length === 1 && project.media[0]?.wide ? "is-wide" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
   const media = project.media
     .map(
       (item) => {
@@ -614,6 +645,28 @@ const buildProjectCard = (project, index) => {
         `<a class="source-link" href="${link.url}" ${newTabAttrs}><i data-lucide="external-link"></i><span>${link.label}</span></a>`,
     )
     .join("");
+  const previewAction = project.preview && !project.preview.coverOnly
+    ? `<button class="source-link primary" type="button" data-preview-project="${index}">
+          <i data-lucide="eye"></i>
+          <span>Preview</span>
+        </button>`
+    : "";
+  const materialActions = `${previewAction}${links}`;
+  const quickLabels = ["Role", "Scope", "Signal"];
+  const quickSummary = project.quick
+    ? `<div class="quick-summary" aria-label="${project.title} quick read">
+        ${project.quick
+          .map(
+            (item, quickIndex) => `
+              <span>
+                <b>${quickLabels[quickIndex] || "Note"}</b>
+                ${item}
+              </span>
+            `,
+          )
+          .join("")}
+      </div>`
+    : "";
   const defaultCaseRows = project.caseNotes
     ? [
         { label: "Context", text: project.caseNotes.context },
@@ -652,28 +705,23 @@ const buildProjectCard = (project, index) => {
       <div class="${mediaClass}">${media}</div>
       <div class="card-copy">
         <div class="category-pill">${project.category}</div>
-        <div class="project-tags">${tags}</div>
         <h3>${project.title}</h3>
         ${
           project.timeline
             ? `<p class="project-timeline">${project.timeline}</p>`
             : ""
         }
+        ${quickSummary}
+        <div class="project-tags">${tags}</div>
         <p class="case-summary">${project.summary}</p>
         ${caseBrief}
         <p class="cn-note">${project.cn}</p>
-        <div class="evidence-label">Open materials</div>
-        <div class="card-actions">
-          ${
-            project.preview
-              ? `<button class="source-link primary" type="button" data-preview-project="${index}">
-                  <i data-lucide="eye"></i>
-                  <span>Preview</span>
-                </button>`
-              : ""
-          }
-          ${links}
-        </div>
+        ${
+          materialActions
+            ? `<div class="evidence-label">Open materials</div>
+              <div class="card-actions">${materialActions}</div>`
+            : ""
+        }
       </div>
     </article>
   `;
@@ -697,9 +745,7 @@ const renderProjects = (filter = "all") => {
 
   const copy = capabilityCopy[filter] || capabilityCopy.all;
   const matchesFilter = (project) => filter === "all" || project.filters.includes(filter);
-  const matchedProjects = projects
-    .map((project, index) => ({ project, index }))
-    .filter(({ project }) => matchesFilter(project));
+  const matchedProjects = orderedProjects.filter(({ project }) => matchesFilter(project));
   const strategic = matchedProjects.filter(({ project }) => project.track !== "creative");
   const creative = matchedProjects.filter(({ project }) => project.track === "creative");
 
@@ -787,7 +833,7 @@ const setEmbeddedPreview = (index) => {
     button.classList.toggle("is-active", Number(button.dataset.previewIndex) === index);
   });
 
-  const useThumbnailFallback = window.location.protocol === "file:";
+  const useThumbnailFallback = window.location.protocol === "file:" || item.coverOnly;
   frameWrap?.classList.toggle("is-thumbnail-fallback", useThumbnailFallback);
   frame.src = useThumbnailFallback ? "about:blank" : item.url;
   title.textContent = item.title;
