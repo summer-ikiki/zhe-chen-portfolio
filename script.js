@@ -73,6 +73,106 @@ const capabilityCopy = {
 
 const projects = [
   {
+    title: "Ditto — International Campus Growth System",
+    category: "Marketing Director & Growth Consultant",
+    track: "strategic",
+    filters: ["growth", "product", "creator"],
+    featured: true,
+    tags: ["Campus growth", "Funnel analytics", "Channel attribution", "Ambassador channels", "Product growth"],
+    cn: "以安全口径呈现 Ditto 工作项目：校园增长、渠道归因、漏斗分析、大使体系和产品增长协作。",
+    summary:
+      "A portfolio-safe work snapshot of a multi-campus acquisition and activation system for a student dating product, connecting field marketing, funnel analytics, ambassador channels, and product-growth feedback loops.",
+    caseNotes: {
+      rows: [
+        {
+          label: "Scope",
+          text: "International campus growth and user acquisition across student communities, events, posters, ambassador links, and local channels.",
+        },
+        {
+          label: "Ownership",
+          text: "Led marketing and growth work as Marketing Director & Growth Consultant, coordinating channel strategy, campaign execution, tracking, and product-growth feedback.",
+        },
+        {
+          label: "Systems built",
+          text: "UTM attribution, campus/channel reporting, funnel diagnosis, ambassador tracking, and portfolio-safe growth readouts for product and marketing decisions.",
+        },
+      ],
+      signal: "Multi-campus growth system · funnel tracking · channel attribution · product-growth collaboration.",
+      signalCn: "以安全口径呈现校园增长、渠道归因、漏斗分析和产品增长协作能力。",
+    },
+    media: [{ src: "./assets/project-covers/ditto-homepage.png", alt: "Ditto public website homepage", cover: true }],
+    links: [{ label: "Official website", url: "https://ditto.ai" }],
+  },
+  {
+    title: "ENC Mobile — Marketing & Business Development",
+    category: "Marketing & Business Development",
+    track: "strategic",
+    filters: ["growth", "product"],
+    featured: true,
+    tags: ["Regional BD", "Student market", "Partner growth", "Local channels", "Product coordination"],
+    cn: "以安全口径呈现 ENC Mobile 工作项目：市场营销、商务拓展、学生市场、渠道合作和产品/技术团队协作。",
+    summary:
+      "A public-safe work snapshot covering regional marketing, business development, student-market expansion, partner channels, and product/technical team coordination.",
+    caseNotes: {
+      rows: [
+        {
+          label: "Scope",
+          text: "Regional marketing and BD for a telecom/mobile-service business, with focus on student-market growth and partner/channel expansion.",
+        },
+        {
+          label: "Ownership",
+          text: "Owned marketing and BD workstreams while using growth thinking to support product direction and coordinate with product/technical teams.",
+        },
+        {
+          label: "Systems built",
+          text: "Student-market partnerships, campus/community channels, BD materials, partner follow-up flows, and growth-informed product feedback loops.",
+        },
+      ],
+      signal: "Marketing & BD ownership · student-market expansion · partner/channel development · product-team coordination.",
+      signalCn: "以安全口径呈现市场拓展、学生市场增长、合作伙伴渠道和跨团队协作能力。",
+    },
+    media: [{ src: "./assets/project-covers/encmobile-homepage.png", alt: "ENC Mobile public website homepage", cover: true }],
+    links: [{ label: "Official website", url: "https://www.encmobile.com/" }],
+  },
+  {
+    title: "PandaPal x Hypie — Overseas Brand Growth Marketing Agency",
+    category: "Founder / Overseas Brand Growth / Creator & Community",
+    track: "strategic",
+    filters: ["growth", "creator", "content", "product"],
+    featured: true,
+    tags: ["Founder", "Overseas growth", "Brand marketing", "Creator network", "Local activation"],
+    cn: "面向企业和品牌出海增长的营销机构与社区增长体系，以安全口径呈现 Founder 角色、品牌增长、创作者资源和本地化触达能力。",
+    summary:
+      "A founder-led overseas growth marketing agency and community ecosystem for brands expanding into North American consumer, student, and Chinese-speaking markets, combining brand strategy, creator resources, social content, and local-market activation.",
+    caseNotes: {
+      rows: [
+        {
+          label: "Scope",
+          text: "Overseas growth marketing and community go-to-market work for brands expanding into North American consumer, student, and Chinese-speaking markets.",
+        },
+        {
+          label: "Ownership",
+          text: "Founder; built the agency positioning, service packaging, community/creator resource system, partner narrative, and early product/community infrastructure.",
+        },
+        {
+          label: "Systems built",
+          text: "Brand-growth playbooks, creator and community resource coverage, cross-platform social presence, campaign packaging, and partner-facing materials.",
+        },
+      ],
+      signal: "Founder ownership · overseas brand-growth agency · creator/community resource system · cross-platform activation.",
+      signalCn: "以安全口径呈现创始人角色、品牌出海增长、创作者/社区资源系统和跨平台激活能力。",
+    },
+    media: [
+      { id: "1d8T0Lv6JAeLc-AL_2hhNQaJPYA9HqAG_", alt: "PandaPal campus community visual" },
+      { src: "./assets/project-covers/hypie-agency-cover.png", alt: "Hypie overseas growth marketing agency cover", cover: true },
+    ],
+    links: [
+      { label: "Source folder", url: driveFolder("1XTy1eNbYn6JsrrFu58C8jezgsiPN59km") },
+      { label: "PandaPal Instagram", url: "https://www.instagram.com/pandapal_us?igsh=NTc4MTIwNjQ2YQ==" },
+      { label: "PandaPal FM / Linktree", url: "https://linktr.ee/pandapalfm?utm_source=qr_code" },
+    ],
+  },
+  {
     title: "PandaPal",
     category: "Founder / Product Marketing / Growth",
     track: "strategic",
@@ -400,11 +500,13 @@ const projects = [
   },
 ];
 
-const previewItems = [projects[0], projects[1], projects[2], projects[3], projects[5], projects[6], projects[7]]
+const previewItems = projects
   .filter((project) => project?.preview)
+  .slice(0, 8)
   .map((project) => ({
     ...project.preview,
     cover: project.media[0]?.id,
+    coverSrc: project.media[0]?.src,
     openUrl: project.links[0]?.url,
   }));
 
@@ -497,8 +599,11 @@ const buildProjectCard = (project, index) => {
   const mediaClass = project.media.length === 1 ? "card-media single" : "card-media";
   const media = project.media
     .map(
-      (item) =>
-        `<img src="${thumb(item.id, 1000)}" alt="${item.alt}" loading="lazy" />`,
+      (item) => {
+        const src = item.src || thumb(item.id, 1000);
+        const fitClass = item.cover ? " class=\"is-cover\"" : "";
+        return `<img src="${src}" alt="${item.alt}" loading="lazy"${fitClass} />`;
+      },
     )
     .join("");
   const tags = project.tags.map((tag) => `<span>${tag}</span>`).join("");
@@ -509,21 +614,27 @@ const buildProjectCard = (project, index) => {
         `<a class="source-link" href="${link.url}" ${newTabAttrs}><i data-lucide="external-link"></i><span>${link.label}</span></a>`,
     )
     .join("");
+  const defaultCaseRows = project.caseNotes
+    ? [
+        { label: "Context", text: project.caseNotes.context },
+        { label: "My role", text: project.caseNotes.role },
+        { label: "Output", text: project.caseNotes.output },
+      ].filter((row) => row.text)
+    : [];
+  const caseRows = project.caseNotes?.rows || defaultCaseRows;
   const caseBrief = project.caseNotes
     ? `
         <div class="case-brief" aria-label="${project.title} contribution summary">
-          <div>
-            <span>Context</span>
-            <p>${project.caseNotes.context}</p>
-          </div>
-          <div>
-            <span>My role</span>
-            <p>${project.caseNotes.role}</p>
-          </div>
-          <div>
-            <span>Output</span>
-            <p>${project.caseNotes.output}</p>
-          </div>
+          ${caseRows
+            .map(
+              (row) => `
+                <div>
+                  <span>${row.label}</span>
+                  <p>${row.text}</p>
+                </div>
+              `,
+            )
+            .join("")}
           ${
             project.caseNotes.signal
               ? `<div class="case-signal">
@@ -553,10 +664,14 @@ const buildProjectCard = (project, index) => {
         <p class="cn-note">${project.cn}</p>
         <div class="evidence-label">Open materials</div>
         <div class="card-actions">
-          <button class="source-link primary" type="button" data-preview-project="${index}">
-            <i data-lucide="eye"></i>
-            <span>Preview</span>
-          </button>
+          ${
+            project.preview
+              ? `<button class="source-link primary" type="button" data-preview-project="${index}">
+                  <i data-lucide="eye"></i>
+                  <span>Preview</span>
+                </button>`
+              : ""
+          }
           ${links}
         </div>
       </div>
@@ -620,6 +735,9 @@ const renderProjects = (filter = "all") => {
   document.querySelectorAll("[data-preview-project]").forEach((button) => {
     button.addEventListener("click", () => {
       const project = projects[Number(button.dataset.previewProject)];
+      if (!project?.preview) {
+        return;
+      }
       openDialog(project.preview.title, project.preview.url);
     });
   });
@@ -674,7 +792,7 @@ const setEmbeddedPreview = (index) => {
   frame.src = useThumbnailFallback ? "about:blank" : item.url;
   title.textContent = item.title;
   description.textContent = item.description;
-  cover.src = thumb(item.cover, 1600);
+  cover.src = item.coverSrc || thumb(item.cover, 1600);
   cover.alt = `${item.title} thumbnail`;
   openLink.href = item.openUrl || item.url;
 };

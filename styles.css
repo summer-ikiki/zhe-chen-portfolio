@@ -651,6 +651,10 @@ h3 {
   object-position: center;
 }
 
+.card-media img.is-cover {
+  object-fit: cover;
+}
+
 .card-media.single img {
   aspect-ratio: 4 / 3;
 }
