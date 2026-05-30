@@ -4,6 +4,10 @@ const drivePreview = (id) => `https://drive.google.com/file/d/${id}/preview`;
 const folderPreview = (id) => `https://drive.google.com/embeddedfolderview?id=${id}#grid`;
 const thumb = (id, size = 1200) => `https://drive.google.com/thumbnail?id=${id}&sz=w${size}`;
 const newTabAttrs = 'target="_blank" rel="noopener noreferrer"';
+const brandYouUrl =
+  window.location.hostname === "summer-ikiki.github.io"
+    ? "./brandyou-en.html"
+    : "https://summer-ikiki.github.io/brandyou/";
 
 const capabilityCopy = {
   all: {
@@ -14,6 +18,15 @@ const capabilityCopy = {
     primaryTitle: "Product strategy, growth systems, creator/community work, and business planning.",
     secondaryKicker: "Creative / Visual Work",
     secondaryTitle: "Content production, public creative work, visual systems, and composition judgment.",
+  },
+  ai: {
+    label: "AI Native",
+    title: "AI-native products, AI-era communities, and system-building cases.",
+    cn: "重点查看 AI 原生产品、AI 时代社群、AI 辅助工作流和系统化搭建相关案例。",
+    primaryKicker: "AI Native Cases",
+    primaryTitle: "AI-native products, communities, workflow tools, and system-building projects.",
+    secondaryKicker: "Related Systems",
+    secondaryTitle: "Supporting product, growth, and creator/community systems connected to AI-era work.",
   },
   growth: {
     label: "Growth & GTM",
@@ -75,32 +88,32 @@ const projects = [
   {
     title: "Ditto — International Campus Growth System",
     displayOrder: 10,
-    category: "Marketing Director & Growth Consultant",
+    category: "AI Native Product / Marketing Director & Growth Consultant",
     track: "strategic",
-    filters: ["growth", "product", "creator"],
+    filters: ["ai", "growth", "product", "creator"],
     featured: true,
-    tags: ["Campus growth", "Funnel analytics", "Channel attribution", "Ambassador channels", "Product growth"],
+    tags: ["AI-native product", "Campus growth", "Funnel analytics", "Channel attribution", "Product growth"],
     quick: ["Marketing Director & Growth Consultant", "Campus acquisition and activation", "Funnel tracking and channel attribution"],
-    cn: "Ditto 工作项目，呈现校园增长、渠道归因、漏斗分析、大使体系和产品增长协作。",
+    cn: "Ditto 是 AI Native 公司的 AI Native 产品工作项目，呈现校园增长、渠道归因、漏斗分析和产品增长协作。",
     summary:
-      "A multi-campus acquisition and activation system for a student dating product, connecting field marketing, funnel analytics, ambassador channels, and product-growth feedback loops.",
+      "An AI-native student social product growth system connecting field marketing, funnel analytics, ambassador channels, and product-growth feedback loops.",
     caseNotes: {
       rows: [
         {
-          label: "Scope",
-          text: "International campus growth and user acquisition across student communities, events, posters, ambassador links, and local channels.",
+          label: "Context",
+          text: "AI-native student social product growth across student communities, campus channels, events, ambassadors, and local activation.",
         },
         {
-          label: "Ownership",
-          text: "Led marketing and growth work as Marketing Director & Growth Consultant, coordinating channel strategy, campaign execution, tracking, and product-growth feedback.",
+          label: "Role",
+          text: "Marketing Director & Growth Consultant.",
         },
         {
-          label: "Systems built",
-          text: "UTM attribution, campus/channel reporting, funnel diagnosis, ambassador tracking, and growth readouts for product and marketing decisions.",
+          label: "Contribution",
+          text: "Led growth systems for an AI-native student product across campus acquisition, channel operations, attribution, campaign execution, and product feedback loops.",
         },
       ],
-      signal: "Multi-campus growth system · funnel tracking · channel attribution · product-growth collaboration.",
-      signalCn: "呈现校园增长、渠道归因、漏斗分析和产品增长协作能力。",
+      signal: "AI-native product growth system · funnel tracking · channel attribution · product-growth collaboration.",
+      signalCn: "呈现 AI 原生产品增长、校园渠道、漏斗分析和产品增长协作能力。",
     },
     media: [{ src: "./assets/project-covers/ditto-homepage.png", alt: "Ditto public website homepage", cover: true, wide: true }],
     links: [{ label: "Official website", url: "https://ditto.ai" }],
@@ -108,28 +121,28 @@ const projects = [
   {
     title: "ENC Mobile — Marketing & Business Development",
     displayOrder: 30,
-    category: "Marketing & Business Development",
+    category: "Marketing & Business Development Manager",
     track: "strategic",
     filters: ["growth", "product"],
     featured: true,
     tags: ["Regional BD", "Student market", "Partner growth", "Local channels", "Product coordination"],
-    quick: ["Marketing & Business Development", "Student-market expansion", "Partner channels and product coordination"],
+    quick: ["Marketing & Business Development Manager", "Student-market expansion", "Partner channels and product coordination"],
     cn: "ENC Mobile 工作项目，呈现市场营销、商务拓展、学生市场、渠道合作和产品/技术团队协作。",
     summary:
       "Regional marketing and business-development work across student-market expansion, partner channels, local growth, and product/technical team coordination.",
     caseNotes: {
       rows: [
         {
-          label: "Scope",
+          label: "Context",
           text: "Regional marketing and BD for a telecom/mobile-service business, with focus on student-market growth and partner/channel expansion.",
         },
         {
-          label: "Ownership",
-          text: "Owned marketing and BD workstreams while using growth thinking to support product direction and coordinate with product/technical teams.",
+          label: "Role",
+          text: "Marketing & Business Development Manager.",
         },
         {
-          label: "Systems built",
-          text: "Student-market partnerships, campus/community channels, BD materials, partner follow-up flows, and growth-informed product feedback loops.",
+          label: "Contribution",
+          text: "Drove marketing and business-development work across student-market expansion, partner channels, local growth, and product/team coordination.",
         },
       ],
       signal: "Marketing & BD ownership · student-market expansion · partner/channel development · product-team coordination.",
@@ -153,16 +166,16 @@ const projects = [
     caseNotes: {
       rows: [
         {
-          label: "Scope",
+          label: "Context",
           text: "Overseas growth marketing and community go-to-market work for brands expanding into North American consumer, student, and Chinese-speaking markets.",
         },
         {
-          label: "Ownership",
-          text: "Founder; built the agency positioning, service packaging, creator/community resource system, partner narrative, and growth-service model.",
+          label: "Role",
+          text: "Founder.",
         },
         {
-          label: "Systems built",
-          text: "Brand-growth playbooks, creator and community resource coverage, cross-platform social presence, campaign packaging, and partner-facing materials.",
+          label: "Contribution",
+          text: "Built the agency direction and growth-service model for overseas brand expansion.",
         },
       ],
       signal: "Founder ownership · overseas brand-growth agency · creator/community resource system · cross-platform activation.",
@@ -172,22 +185,72 @@ const projects = [
     links: [],
   },
   {
+    title: "BrandYou — AI-Native Community & Brand System",
+    displayOrder: 45,
+    category: "Co-founder / Partner / AI-Native Community",
+    track: "strategic",
+    filters: ["ai", "growth", "creator", "content", "product"],
+    featured: true,
+    tags: ["AI-native community", "Co-founder", "0-to-1 website", "Brand system", "Community narrative"],
+    quick: ["Co-founder & Partner", "AI-native youth community", "0-to-1 brand, website, and launch narrative"],
+    cn: "AI 时代青年行动社群与品牌系统，围绕“像打造 AI 初创公司一样打造自己”，完成定位、网站、社群叙事和启动素材。",
+    summary:
+      "A 0-to-1 AI-native youth community and brand system built around \"Build yourself like an AI startup,\" covering positioning, website, community narrative, and launch materials.",
+    caseNotes: {
+      context: "AI-native community for independent builders turning identity, AI workflows, trusted networks, and new growth engines into personal assets.",
+      role: "Co-founder & Partner.",
+      contribution: "Co-led the 0-to-1 build of an AI-native community and public-facing brand system.",
+      output: "Live website, brand narrative, community structure, and launch-facing public page.",
+      signal: "Co-founder ownership · AI-native community · 0-to-1 brand system and website.",
+      signalCn: "联合创始人/合伙人项目，体现 AI 时代社群、品牌定位和网站从 0 到 1 搭建能力。",
+    },
+    media: [{ src: "./assets/project-covers/brandyou-ai-native.png", alt: "BrandYou AI-native community website homepage", cover: true }],
+    links: [{ label: "Live website", url: brandYouUrl }],
+  },
+  {
+    title: "InfluencerOps Playbook",
+    displayOrder: 48,
+    category: "AI Marketing Ops / Workflow System",
+    track: "strategic",
+    filters: ["ai", "growth", "creator", "product"],
+    featured: true,
+    tags: ["AI workflow", "Influencer marketing", "Creator ops", "Automation prototype", "Operating playbook"],
+    quick: ["Builder / Workflow Designer", "Influencer marketing operating system", "Playbook plus AI automation demo"],
+    cn: "红人营销流程手册与 AI 辅助工作流原型，覆盖达人筛选、评估、建联、上线、数据追踪、复盘和续约判断。",
+    summary:
+      "An influencer marketing operating playbook and AI automation demo that turns creator sourcing, evaluation, outreach, launch tracking, and renewal decisions into a structured workflow.",
+    caseNotes: {
+      context: "Transferable influencer marketing workflow for creator sourcing, evaluation, pricing, launch controls, performance tracking, and renewal decisions.",
+      role: "Builder / Workflow Designer.",
+      contribution: "Turned repeated influencer-marketing decisions into a structured operating system and AI-assisted workflow prototype.",
+      output: "Operating playbook, workflow map, creator scorecard, decision gates, and live AI automation demo.",
+      signal: "AI-assisted marketing workflow · creator evaluation system · live automation demo.",
+      signalCn: "体现 AI 辅助营销工作流、达人评估系统和可打开的自动化 Demo。",
+    },
+    media: [{ src: "./assets/project-covers/influencerops-playbook.png", alt: "InfluencerOps Playbook website homepage", cover: true }],
+    links: [
+      { label: "Operating playbook", url: "https://summer-ikiki.github.io/influencerops-playbook/" },
+      { label: "AI automation demo", url: "https://summer-ikiki.github.io/influencerops-playbook/dashboard.html" },
+    ],
+  },
+  {
     title: "PandaPal",
     displayOrder: 20,
     category: "Founder / Product Marketing / Growth",
     track: "strategic",
-    filters: ["growth", "creator", "product"],
+    filters: ["ai", "growth", "creator", "product"],
     featured: true,
     timeline: "Initiated in 2021",
     tags: ["0-to-1 product", "Campus GTM", "Community growth", "BD", "Demo video"],
-    quick: ["Founder / Product Marketing", "Campus product and GTM", "Full demo, business, and marketing package"],
+    quick: ["Founder", "Campus product and GTM", "Full demo, business, and marketing package"],
     cn: "围绕校园生活方式产品，整理了市场洞察、GTM、社群增长、BD、产品 Demo 与小程序早期体验材料。",
     summary:
       "A campus lifestyle product package developed from market insight to business plan, marketing plan, product video, and mini-app early-access materials.",
     caseNotes: {
       context: "Campus lifestyle mini-program concept for Chinese students, built from market insight to early-access materials.",
-      role: "Founder and product marketer; shaped positioning, GTM, BD narrative, demo video, and community launch materials.",
-      output: "Business plan, marketing plan, campus GTM package, product demo video, and mini-app concept.",
+      role: "Founder.",
+      contribution: "Founded and packaged a campus lifestyle product from market insight into a GTM-ready product story.",
+      output: "Business plan, marketing plan, product demo videos, campus GTM package, and early mini-app concept.",
       signal: "Founder ownership · full GTM package · product demo, business plan, marketing plan, and early mini-app materials.",
       signalCn: "从 0-1 产品构想到 GTM、Demo、商业计划和营销计划的完整打包能力。",
     },
@@ -217,7 +280,7 @@ const projects = [
     displayOrder: 60,
     category: "Founder / Film Collaboration Venture",
     track: "strategic",
-    filters: ["creator", "product", "content"],
+    filters: ["ai", "creator", "product", "content"],
     featured: true,
     timeline: "Initiated in 2018",
     tags: ["Founder", "Creator collaboration", "Film resources", "Pitch", "Ops model", "Business plan"],
@@ -227,7 +290,8 @@ const projects = [
       "A film-resource collaboration venture connecting creator workflows, shared production resources, operating structure, and business storytelling.",
     caseNotes: {
       context: "Film-resource collaboration venture for creators, crews, and shared production resources.",
-      role: "Founder and project principal; built the operating model, business story, bilingual plan materials, and pitch narrative.",
+      role: "Founder / Project Principal.",
+      contribution: "Initiated a film-resource collaboration venture and developed its operating model and pitch narrative.",
       output: "Awarded Chinese business plan, English business plan, pitch video, and venture source folder.",
       signal: "Founder ownership · awarded Chinese business plan · bilingual venture materials and pitch video.",
       signalCn: "Founder 项目，包含获奖中文商业计划书、英文商业计划书与路演视频。",
@@ -252,18 +316,19 @@ const projects = [
   {
     title: "SWAP",
     displayOrder: 50,
-    category: "Social Product / Community",
+    category: "Co-founder & Marketing Partner / Social Product",
     track: "strategic",
     filters: ["growth", "product", "creator"],
     timeline: "Launched in 2023",
-    tags: ["Social product", "User insight", "Community activation", "Product education"],
-    quick: ["Product positioning and launch materials", "Live skill-exchange social product", "Website, RED proof, and education videos"],
+    tags: ["Co-founder", "Marketing partner", "Social product", "Community activation", "Product education"],
+    quick: ["Co-founder & Marketing Partner", "Live skill-exchange social product", "Website, RED proof, and education videos"],
     cn: "已上线的技能交换社交产品，结合官网、小红书公开视频、产品教育、社区激活和线上/线下转化进行表达。",
     summary:
       "A launched youth skill-exchange social product presented through its live website, public RED / Xiaohongshu proof, explainer videos, user education, and activation materials.",
     caseNotes: {
       context: "Launched skill-exchange social product for young users, combining product education, community activation, and social proof.",
-      role: "Worked on product positioning, public-facing launch materials, user education videos, and social distribution.",
+      role: "Co-founder & Marketing Partner.",
+      contribution: "Co-founded the launched social product and led marketing-facing positioning, product education, public proof, and community activation work.",
       output: "Live website, RED / Xiaohongshu proof, product videos, introduction material, and source folder.",
       signal: "Launched product website · RED / Xiaohongshu proof · onboarding and product-education content.",
       signalCn: "已上线产品，具备官网、公开视频证据和产品教育内容。",
@@ -301,7 +366,8 @@ const projects = [
       "Strategy work around audience positioning, creator voice, campaign design, social-media direction, and cross-platform content systems.",
     caseNotes: {
       context: "Creator and social-media strategy work across personal influence, campaign design, and audience systems.",
-      role: "Defined audience positioning, creator voice, campaign angles, and cross-platform content direction.",
+      role: "Creator / Social Strategy.",
+      contribution: "Built audience and creator-strategy direction across positioning, campaign angles, content systems, and cross-platform social narrative.",
       output: "Influence strategy, KUSC campaign material, creative sample, and strategy source folder.",
       signal: "Creator/audience positioning · campaign planning · cross-platform content strategy.",
       signalCn: "覆盖创作者定位、受众策略、campaign 设计与跨平台内容方向。",
@@ -334,7 +400,8 @@ const projects = [
       "A short-film project showing creative direction, end-to-end production ownership, visual packaging, and narrative judgment.",
     caseNotes: {
       context: "Short-film work spanning concept, production, and poster packaging.",
-      role: "Led creative direction and production execution across story, shooting coordination, and visual materials.",
+      role: "Director / Producer.",
+      contribution: "Led creative direction and production execution across story, shooting coordination, and visual packaging.",
       output: "Public YouTube film link, poster system, source materials, and production archive.",
       signal: "End-to-end creative ownership · public short film · poster system and production archive.",
       signalCn: "从创意、拍摄、制作到视觉包装的完整执行。",
@@ -368,7 +435,8 @@ const projects = [
       "A hands-on video archive anchored by Mirror, my first micro short film made on a $30 budget, alongside VLOG, documentary-style content, and student production exercises.",
     caseNotes: {
       context: "Early video archive spanning micro short film, VLOG, documentary-style work, and student production practice.",
-      role: "Wrote, directed, edited, and packaged low-budget video pieces while building hands-on production judgment.",
+      role: "Writer / Director / Editor.",
+      contribution: "Created and packaged low-budget video work while building hands-on production judgment across writing, directing, editing, and presentation.",
       output: "Mirror short film, VLOG sample, TCM video sample, and early video source folder.",
       signal: "First micro short film made on a $30 budget · writing, directing, editing, and packaging.",
       signalCn: "30 美金低成本完成的第一个微电影作品，覆盖编剧、导演、剪辑与包装。",
@@ -403,7 +471,8 @@ const projects = [
       "A website-strategy system covering product-marketing structure, information architecture, content hierarchy, brand language, and execution taste.",
     caseNotes: {
       context: "Personal website strategy system connecting product-marketing structure, information architecture, and brand expression.",
-      role: "Built the IA, content hierarchy, brand system direction, and wireframe logic for a portfolio-style product surface.",
+      role: "Product / Web Strategy.",
+      contribution: "Developed the website strategy system by connecting information architecture, content hierarchy, brand language, and product-facing wireframe logic.",
       output: "Website strategy plan, brand system, sitemap/IA material, wireframe, and source folder.",
       signal: "IA, content hierarchy, brand system, and wireframe thinking in one website strategy package.",
       signalCn: "把信息架构、内容层级、品牌系统和 wireframe 思考整合到一个网站策略方案中。",
@@ -436,7 +505,8 @@ const projects = [
       "A selected visual archive showing composition, mood, place, and cinematic framing across travel and observational photography.",
     caseNotes: {
       context: "Selected photography archive used to show visual judgment, place, mood, and composition.",
-      role: "Shot and selected work around landscape, travel observation, and cinematic framing.",
+      role: "Photographer / Visual Curator.",
+      contribution: "Shot and curated travel and observational photography to show composition, mood, place, and cinematic framing.",
       output: "Photography folder and selected frames for visual-taste review.",
       signal: "Visual judgment across composition, mood, place, and cinematic framing.",
       signalCn: "通过构图、氛围、空间与电影感画面呈现视觉判断力。",
@@ -460,7 +530,7 @@ const projects = [
     title: "Insight Fast Recommendation",
     category: "Core Founding Member / Product Strategy",
     track: "strategic",
-    filters: ["product", "growth"],
+    filters: ["ai", "product", "growth"],
     timeline: "Developed in 2020",
     tags: ["Core founding member", "Recommendation", "Personalization", "Marketing system", "Product strategy"],
     quick: ["Core founding member", "Recommendation and marketing system", "Personalization and campaign logic"],
@@ -469,7 +539,8 @@ const projects = [
       "A recommendation and marketing-system concept focused on personalization, product strategy, user targeting, and campaign logic.",
     caseNotes: {
       context: "Recommendation and marketing-system concept focused on personalization and user targeting.",
-      role: "Core founding member; framed product logic, campaign use cases, and marketing-system thinking for recommendation scenarios.",
+      role: "Core Founding Member.",
+      contribution: "Framed product logic, campaign use cases, and marketing-system thinking for recommendation scenarios.",
       output: "Recommendation concept PDF and source folder.",
       signal: "Core founding member · recommendation concept · personalization and marketing-system logic.",
       signalCn: "核心创始成员参与，体现推荐系统概念、个性化逻辑和营销系统思维。",
@@ -497,7 +568,7 @@ const projects = [
       "Selected analytics and social-media credentials that complement marketing, growth, and operations work.",
     caseNotes: {
       context: "Supporting credentials for analytics, digital marketing, and social-media tool fluency.",
-      role: "Completed certifications that complement marketing, growth, and operations work.",
+      role: "Credential Holder.",
       output: "Google Analytics qualification, Hootsuite credential, and source folder.",
       signal: "Google Analytics and Hootsuite credentials supporting marketing measurement and social-tool fluency.",
       signalCn: "补充证明营销分析、数据反馈和社媒工具基础。",
@@ -670,8 +741,8 @@ const buildProjectCard = (project, index) => {
   const defaultCaseRows = project.caseNotes
     ? [
         { label: "Context", text: project.caseNotes.context },
-        { label: "My role", text: project.caseNotes.role },
-        { label: "Output", text: project.caseNotes.output },
+        { label: "Role", text: project.caseNotes.role },
+        { label: "Contribution", text: project.caseNotes.contribution },
       ].filter((row) => row.text)
     : [];
   const caseRows = project.caseNotes?.rows || defaultCaseRows;

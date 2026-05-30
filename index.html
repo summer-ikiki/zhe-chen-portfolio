@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&amp;family=Noto+Sans+SC:wght@500;700;800&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=202605292830" />
+    <link rel="stylesheet" href="./styles.css?v=202605293130" />
   </head>
   <body>
     <div class="access-note" aria-label="Google Drive access note">
@@ -61,6 +61,7 @@
             <span>这里整理的是我的早期项目，呈现了能力基础与成长路径；我近期的作品在复杂度、完成度和策略深度上已有明显提升，可根据岗位方向补充交流更相关的案例。</span>
           </p>
           <div class="hero-paths" aria-label="Quick capability paths">
+            <a href="#work" data-jump-filter="ai">AI Native</a>
             <a href="#work" data-jump-filter="growth">Growth</a>
             <a href="#work" data-jump-filter="creator">Creator &amp; Community</a>
             <a href="#work" data-jump-filter="product">Product Strategy</a>
@@ -68,7 +69,7 @@
             <a href="#work" data-jump-filter="visual">Visual Systems</a>
             <a href="#work" data-jump-filter="credentials">Credentials</a>
           </div>
-          <p class="cn-note">可按能力线索浏览：点击 Growth、Creator、Product、Content、Visual 或 Credentials 进入对应案例。</p>
+          <p class="cn-note">可按能力线索浏览：点击 AI Native、Growth、Creator、Product、Content、Visual 或 Credentials 进入对应案例。</p>
           <div class="hero-actions">
             <a class="button primary" href="#capabilities">
               <i data-lucide="route"></i>
@@ -167,6 +168,12 @@
         </div>
 
         <div class="capability-grid">
+          <a class="capability-card" href="#work" data-jump-filter="ai">
+            <i data-lucide="sparkles"></i>
+            <span class="capability-label">AI Native</span>
+            <h3>AI-native products, AI-era communities, and system-building projects.</h3>
+            <p>Ditto, BrandYou, InfluencerOps, PandaPal, Legend, Insight</p>
+          </a>
           <a class="capability-card" href="#work" data-jump-filter="growth">
             <i data-lucide="trending-up"></i>
             <span class="capability-label">Growth & GTM</span>
@@ -219,6 +226,10 @@
           <button class="filter-button is-active" type="button" data-filter="all">
             <i data-lucide="asterisk"></i>
             <span>All</span>
+          </button>
+          <button class="filter-button" type="button" data-filter="ai">
+            <i data-lucide="sparkles"></i>
+            <span>AI Native</span>
           </button>
           <button class="filter-button" type="button" data-filter="growth">
             <i data-lucide="trending-up"></i>
@@ -473,6 +484,6 @@
     </dialog>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script src="./script.js?v=202605292830"></script>
+    <script src="./script.js?v=202605293130"></script>
   </body>
 </html>

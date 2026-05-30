@@ -563,7 +563,7 @@ h3 {
 .capability-grid {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
 }
 
 .capability-card {
@@ -773,7 +773,7 @@ h3 {
   border-bottom: 1px solid rgba(33, 49, 65, 0.08);
   display: grid;
   gap: 8px;
-  grid-template-columns: 82px minmax(0, 1fr);
+  grid-template-columns: minmax(96px, 0.24fr) minmax(0, 1fr);
   padding: 10px 0;
 }
 
@@ -1391,7 +1391,8 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(38px, 11vw, 54px);
+    font-size: clamp(32px, 8.4vw, 39px);
+    line-height: 1.02;
   }
 
   .hero {
