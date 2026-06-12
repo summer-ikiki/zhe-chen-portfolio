@@ -22,10 +22,10 @@ const capabilityCopy = {
   },
   ai: {
     label: "AI Native",
-    title: "AI-native products, AI-era communities, and system-building cases.",
-    cn: "重点查看 AI 原生产品、AI 时代社群、AI 辅助工作流和系统化搭建相关案例。",
+    title: "AI-native products, AI-era communities, interactive media, and system-building cases.",
+    cn: "重点查看 AI 原生产品、AI 时代社群、AI 辅助工作流、互动媒体和系统化搭建相关案例。",
     primaryKicker: "AI Native Cases",
-    primaryTitle: "AI-native products, communities, workflow tools, and system-building projects.",
+    primaryTitle: "AI-native products, communities, workflow tools, interactive media, and system-building projects.",
     secondaryKicker: "Related Systems",
     secondaryTitle: "Supporting product, growth, and creator/community systems connected to AI-era work.",
   },
@@ -97,10 +97,10 @@ const capabilityCopyZh = {
   },
   ai: {
     label: "AI Native",
-    title: "AI 原生产品、AI 时代社群与系统搭建项目。",
-    cn: "重点查看 AI 原生产品、AI 时代社群、AI 辅助工作流和系统化搭建相关案例。",
+    title: "AI 原生产品、AI 时代社群、互动媒体与系统搭建项目。",
+    cn: "重点查看 AI 原生产品、AI 时代社群、AI 辅助工作流、互动媒体和系统化搭建相关案例。",
     primaryKicker: "AI Native 项目",
-    primaryTitle: "AI 原生产品、社群、工作流工具和系统搭建案例。",
+    primaryTitle: "AI 原生产品、社群、工作流工具、互动媒体和系统搭建案例。",
     secondaryKicker: "相关系统能力",
     secondaryTitle: "与 AI 时代产品、增长、创作者生态和社区运营相关的支持性项目。",
   },
@@ -608,7 +608,7 @@ const projects = [
     track: "strategic",
     filters: ["ai", "product", "growth"],
     timeline: "Developed in 2020",
-    tags: ["Core founding member", "Recommendation", "Personalization", "Marketing system", "Product strategy"],
+    tags: ["Core founding member", "AI", "Recommendation", "Personalization", "Marketing system", "Product strategy"],
     quick: ["Core founding member", "Recommendation and marketing system", "Personalization and campaign logic"],
     cn: "作为核心创始成员参与的推荐与营销系统设计，侧重个性化、产品策略、用户触达和营销系统思维。",
     summary:
@@ -631,6 +631,27 @@ const projects = [
       { label: "Recommendation system PDF", url: driveFile("132tXCqG0Jz3gXfi1yqYr8UCnfsdkCxIJ") },
       { label: "Source folder", url: driveFolder("1Sb4oSljMtuK25_KeiRdvU_HV3DlojNC7") },
     ],
+  },
+  {
+    title: "AI Digital Humans for Interactive Media",
+    category: "Founding Member / AI / Interactive Media",
+    track: "strategic",
+    filters: ["ai", "product", "content", "visual"],
+    featured: true,
+    timeline: "Initiated in 2019",
+    tags: ["AI digital human", "Interactive media", "Branding", "Commercialization", "Game-adjacent"],
+    quick: ["Founding Member", "AI digital-human applications", "Branding and commercialization"],
+    cn: "AI 数字虚拟人项目，围绕虚拟角色在互动媒体、虚拟主持、教育传播、公共服务、直播活动和游戏相关场景中的应用展开。",
+    summary:
+      "An AI digital-human project applying virtual characters across interactive media, virtual hosting, education, public-service communication, live events, and game-adjacent scenes.",
+    caseNotes: {
+      context: "A digital-human project built around virtual characters, media production, and interactive public-facing scenarios.",
+      role: "Founding Member · Marketing, Branding & Commercialization.",
+      signal:
+        "Founding-member ownership in translating an AI/media technology project into brand positioning, commercial narratives, application scenarios, and public-facing case materials.",
+    },
+    media: [{ src: "./assets/project-covers/ai-digital-human-case.png", alt: "AI Digital Humans for Interactive Media case page", cover: true, wide: true }],
+    links: [{ label: "Case page", url: "https://summer-ikiki.github.io/ai-digital-human-case-page/" }],
   },
   {
     title: "Certifications",
@@ -909,7 +930,7 @@ const projectCopyZh = {
   "Insight Fast Recommendation": {
     title: "Insight Fast Recommendation",
     category: "核心创始成员 / 产品策略",
-    tags: ["核心创始成员", "推荐系统", "个性化", "营销系统", "产品策略"],
+    tags: ["核心创始成员", "AI", "推荐系统", "个性化", "营销系统", "产品策略"],
     quick: ["核心创始成员", "推荐与营销系统", "个性化与 campaign 逻辑"],
     summary: "侧重个性化、产品策略、用户触达和 campaign 逻辑的推荐与营销系统设计。",
     caseNotes: {
@@ -923,6 +944,21 @@ const projectCopyZh = {
       "Recommendation system PDF": "推荐系统方案 PDF",
       "Source folder": "源材料文件夹",
     },
+  },
+  "AI Digital Humans for Interactive Media": {
+    title: "AI 数字虚拟人的互动媒体应用",
+    category: "核心创始成员 / AI / 互动媒体",
+    timeline: "项目发起于 2019 年",
+    tags: ["AI 数字虚拟人", "互动媒体", "品牌定位", "商业化", "游戏相关场景"],
+    quick: ["核心创始成员", "AI 数字虚拟人应用", "品牌与商业化"],
+    summary: "AI 数字虚拟人项目，围绕虚拟角色在互动媒体、虚拟主持、教育传播、公共服务、直播活动和游戏相关场景中的应用展开。",
+    caseNotes: {
+      context: "围绕虚拟角色、媒体制作和互动场景展开的 AI 数字虚拟人项目。",
+      role: "核心创始成员 · 市场、品牌与商业化。",
+      signal: "体现我作为核心创始成员，把 AI 媒体技术项目转化为品牌定位、商业化叙事、应用场景和对外案例材料的能力。",
+      signalCn: "",
+    },
+    linkLabels: { "Case page": "案例页面" },
   },
   Certifications: {
     title: "证书与工具基础",
@@ -1155,7 +1191,7 @@ const staticCopy = {
       title: "Start with the capability closest to the role.",
       note: "Each capability entry filters directly into matching cases and materials.",
       cards: {
-        ai: ["AI Native", "AI-native products, AI-era communities, and system-building projects.", "Ditto, BrandYou, InfluencerOps, PandaPal, Legend, Insight"],
+        ai: ["AI Native", "AI-native products, AI-era communities, interactive media, and system-building projects.", "Ditto, BrandYou, InfluencerOps, PandaPal, Legend, Insight, AI Digital Human"],
         growth: ["Growth & GTM", "Launch, campus channels, community activation, partner-led growth.", "Ditto, ENC Mobile, HYPIE Marketing, PandaPal"],
         creator: ["Creator & Community", "Creator positioning, KOL/KOC resources, audience systems, campaigns.", "HYPIE Marketing, Influencer Strategy, Legend Co-shooting"],
         product: ["Product Strategy", "Business plans, product narratives, recommendation systems, IA.", "Ditto, PandaPal, SWAP, Web Strategy"],
@@ -1253,7 +1289,7 @@ const staticCopy = {
       title: "从最贴近岗位需求的能力入口开始看。",
       note: "每个入口都对应一组能力和案例，方便面试官快速判断我能放在哪类岗位或项目中发挥作用。",
       cards: {
-        ai: ["AI Native", "把 AI 原生产品、AI 工作流和 AI 时代社群做成可理解、可体验、可推进的项目。", "Ditto、BrandYou、InfluencerOps、PandaPal、Legend、Insight"],
+        ai: ["AI Native", "把 AI 原生产品、AI 工作流、AI 时代社群和互动媒体应用做成可理解、可体验、可推进的项目。", "Ditto、BrandYou、InfluencerOps、PandaPal、Legend、Insight、AI 数字虚拟人"],
         growth: ["增长 / GTM", "把用户触达、校园渠道、社区激活和合作伙伴资源组织成增长路径。", "Ditto、ENC Mobile、HYPIE Marketing、PandaPal"],
         creator: ["创作者 / 社区", "整合创作者资源、受众定位和社群触达，推动内容与增长协同。", "HYPIE Marketing、Influencer Strategy、Legend Co-shooting"],
         product: ["产品策略", "把产品定位、商业计划、GTM 叙事和信息架构整理成可沟通的产品方案。", "Ditto、PandaPal、SWAP、Web Strategy"],
