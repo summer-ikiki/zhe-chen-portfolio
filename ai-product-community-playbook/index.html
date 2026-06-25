@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>AI 产品社区从 0 到 1：Discord 与 Telegram 运营增长手册</title>
+    <meta
+      name="description"
+      content="一份用通俗语言讲清楚如何从 0 到 1 搭建、运营和增长 AI 产品 Discord 与 Telegram 社区的中文网页手册。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="页面导航">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <span class="brand-mark">AI</span>
+        <span>社区增长手册</span>
+      </a>
+      <nav class="nav-links" aria-label="章节导航">
+        <a href="#why">为什么</a>
+        <a href="#compare">平台分工</a>
+        <a href="#framework">7 步框架</a>
+        <a href="#traffic">引流</a>
+        <a href="#sprint">快速拉新</a>
+        <a href="#roadmap">30 天计划</a>
+        <a href="#faq">运营问答</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="主题介绍">
+        <img
+          class="hero-image"
+          src="./assets/community-growth-hero.png"
+          alt="AI 产品社区运营工作台插画"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">AI Product Community Playbook</p>
+          <h1>
+            <span class="title-line">如何从 0 到 1</span>
+            <span class="title-line">搭建并运营</span>
+            <span class="title-line">Discord 和</span>
+            <span class="title-line">Telegram 社区</span>
+          </h1>
+          <p class="hero-lede">
+            用最容易听懂的话说：社区运营不是把人拉进群，<br class="mobile-break" />而是让用户进来后知道去哪、做什么、为什么留下。<span class="desktop-extra">以及怎样把他们的成果变成新的增长。</span>
+          </p>
+          <div class="hero-actions" aria-label="快速跳转">
+            <a class="button primary" href="#framework">
+              <i data-lucide="route"></i>
+              看 7 步框架
+            </a>
+            <a class="button" href="#templates">
+              <i data-lucide="copy-check"></i>
+              拿实操模板
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="summary-strip" aria-label="核心结论">
+        <article>
+          <span>一句话</span>
+          <strong>
+            <span class="summary-line">Telegram 是门口的扩音器，</span>
+            <span class="summary-line">Discord 是屋里的俱乐部。</span>
+          </strong>
+        </article>
+        <article>
+          <span>核心动作</span>
+          <strong>
+            <span class="summary-line">先给加入理由，</span>
+            <span class="summary-line">再设计新人第一步，</span>
+            <span class="summary-line">不要只追求人头数。</span>
+          </strong>
+        </article>
+        <article>
+          <span>增长闭环</span>
+          <strong>
+            <span class="summary-line">内容吸引人，</span>
+            <span class="summary-line">资源留下人，</span>
+            <span class="summary-line">用户成果再带来新人。</span>
+          </strong>
+        </article>
+      </section>
+
+      <section id="why" class="section intro-section">
+        <div class="section-heading">
+          <p class="section-kicker">为什么 AI 产品特别适合做社区</p>
+          <h2>因为用户不只是想知道产品有什么功能，<br class="mobile-break" />他们更想知道“我能拿它做什么”。</h2>
+        </div>
+        <div class="plain-grid">
+          <article>
+            <i data-lucide="sparkles"></i>
+            <h3>AI 产品需要被“示范”</h3>
+            <p>很多人看到 AI 工具会觉得厉害，但不知道怎么用。社区可以每天展示 prompt、workflow、案例，让用户更快理解价值。</p>
+          </article>
+          <article>
+            <i data-lucide="messages-square"></i>
+            <h3>用户会互相启发</h3>
+            <p>一个用户分享“我用它做了竞品分析”，另一个人可能马上想到“我也可以用它做内容选题”。这就是社区的放大作用。</p>
+          </article>
+          <article>
+            <i data-lucide="radar"></i>
+            <h3>社区也是产品雷达</h3>
+            <p>用户问的问题、抱怨的点、反复出现的需求，都是产品团队最真实的反馈，比空想 roadmap 更可靠。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="compare" class="section compare-section">
+        <div class="section-heading compact">
+          <p class="section-kicker">Telegram vs Discord</p>
+          <h2>两个平台不是二选一，<br class="mobile-break" />而是承担不同任务。</h2>
+          <p>
+            可以把 Telegram 想成“快速通知和引流入口”，把 Discord 想成“核心用户长期参与的空间”。
+          </p>
+        </div>
+
+        <div class="platform-panels" aria-label="平台分工">
+          <article class="platform-panel telegram">
+            <div class="panel-topline">
+              <i data-lucide="send"></i>
+              <span>Telegram</span>
+            </div>
+            <h3>适合快速触达、公告、福利和轻量转化。</h3>
+            <ul>
+              <li>发产品更新、活动提醒、限时福利</li>
+              <li>承接 X、LinkedIn、Reddit、KOL 带来的流量</li>
+              <li>用 bot 和置顶消息让新人快速领取资源</li>
+              <li>适合每日短内容，比如一个 prompt、一个技巧、一个案例</li>
+            </ul>
+          </article>
+
+          <article class="platform-panel discord">
+            <div class="panel-topline">
+              <i data-lucide="layout-dashboard"></i>
+              <span>Discord</span>
+            </div>
+            <h3>适合结构化运营、内容沉淀、用户分层和长期留存。</h3>
+            <ul>
+              <li>设置清楚的频道，让新人不迷路</li>
+              <li>沉淀 prompt library、workflow、FAQ、案例库</li>
+              <li>管理 beta tester、power user、ambassador</li>
+              <li>组织 workshop、AMA、challenge 和作品展示</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="comparison-table" role="table" aria-label="Telegram 和 Discord 对比表">
+          <div role="row" class="table-head">
+            <span role="columnheader">维度</span>
+            <span role="columnheader">Telegram</span>
+            <span role="columnheader">Discord</span>
+          </div>
+          <div role="row">
+            <span role="cell">通俗比喻</span>
+            <span role="cell">像一个消息广播群</span>
+            <span role="cell">像一个分区清楚的俱乐部</span>
+          </div>
+          <div role="row">
+            <span role="cell">最适合</span>
+            <span role="cell">拉新、提醒、公告、快速转化</span>
+            <span role="cell">新人引导、深度讨论、内容沉淀</span>
+          </div>
+          <div role="row">
+            <span role="cell">运营重点</span>
+            <span role="cell">消息要短、频率要稳、链接要明确</span>
+            <span role="cell">频道要清楚、活动要固定、身份要分层</span>
+          </div>
+          <div role="row">
+            <span role="cell">看什么指标</span>
+            <span role="cell">入群率、点击率、消息互动率</span>
+            <span role="cell">发言率、UGC、活动参与、留存</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="framework" class="section framework-section">
+        <div class="section-heading">
+          <p class="section-kicker">从 0 到 1 的 7 步框架</p>
+          <h2>不要从“建群”开始，<br class="mobile-break" />要从“用户为什么要留下”开始。</h2>
+        </div>
+
+        <div class="step-list">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <div>
+              <h3>先定义社区的价值</h3>
+              <p>不要叫它“官方交流群”。你要告诉用户：进来能解决什么问题。</p>
+              <div class="example-box">
+                <strong>好理解的定位：</strong>
+                <span>Prompt 实验室、AI workflow 模板库、Beta 用户反馈池、用户作品展示区。</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <div>
+              <h3>搭好 Telegram 和 Discord 的基本结构</h3>
+              <p>Telegram 要简单直接，Discord 要分区清楚。结构不是为了好看，而是为了让新人知道自己该去哪里。</p>
+              <div class="channel-map" aria-label="频道结构示例">
+                <span># start-here</span>
+                <span># announcements</span>
+                <span># prompt-library</span>
+                <span># workflow-sharing</span>
+                <span># showcase</span>
+                <span># help-support</span>
+                <span># feature-requests</span>
+                <span># beta-access</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <div>
+              <h3>设计新人前 10 分钟</h3>
+              <p>一个新人刚进来时，最怕看到一堆频道和一堆消息，不知道从哪开始。你要给他一条很短的路。</p>
+              <ol class="clean-list">
+                <li>告诉他这个社区能帮他什么。</li>
+                <li>让他领取 starter kit。</li>
+                <li>让他选择自己的身份或使用场景。</li>
+                <li>引导他做第一个小动作，比如复制一个 prompt 或分享一个问题。</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">04</span>
+            <div>
+              <h3>准备一个“加入理由”</h3>
+              <p>不要只说“欢迎加入社区”。要把加入动作包装成一个具体收益。</p>
+              <div class="quote-line">
+                例子：进 Discord 领取「AI 内容增长 Prompt Pack」，10 分钟搭好你的第一个内容工作流。
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">05</span>
+            <div>
+              <h3>用固定栏目让社区有节奏</h3>
+              <p>社区不能靠灵感运营。最好让用户知道每周什么时候会发生什么。</p>
+              <div class="week-grid">
+                <span>周一：本周 AI workflow</span>
+                <span>周二：用户案例拆解</span>
+                <span>周三：Prompt battle</span>
+                <span>周四：产品小技巧</span>
+                <span>周五：AMA / office hour</span>
+                <span>周末：最佳作品展示</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">06</span>
+            <div>
+              <h3>把普通成员培养成核心成员</h3>
+              <p>当有人经常提建议、分享作品、帮助新人，就不要只把他当普通用户。给他身份、权限和曝光。</p>
+              <div class="badge-row">
+                <span>Power User</span>
+                <span>Beta Tester</span>
+                <span>Prompt Creator</span>
+                <span>Workflow Builder</span>
+                <span>Ambassador</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <span class="step-number">07</span>
+            <div>
+              <h3>用数据判断社区有没有真的增长</h3>
+              <p>人数只是最表层的指标。真正重要的是：用户有没有发言、有没有使用产品、有没有回来、有没有带来新用户。</p>
+              <div class="metric-grid">
+                <span><strong>拉新</strong>新增成员、来源渠道、邀请转化率</span>
+                <span><strong>激活</strong>24 小时发言率、starter kit 点击率</span>
+                <span><strong>互动</strong>回复率、活动参与率、UGC 数量</span>
+                <span><strong>业务</strong>注册、激活、付费、产品反馈</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="traffic" class="section traffic-section">
+        <div class="section-heading compact">
+          <p class="section-kicker">怎么引流</p>
+          <h2>引流的关键不是到处贴群链接，<br class="mobile-break" />而是给用户一个“现在就点进去”的理由。</h2>
+          <p>
+            最简单的判断标准：如果把群链接拿掉，用户还想不想要你提供的东西？如果答案是想，那这个东西就可以成为引流钩子。
+          </p>
+        </div>
+
+        <div class="flow-diagram" aria-label="引流闭环">
+          <div>
+            <i data-lucide="megaphone"></i>
+            <strong>外部内容</strong>
+            <span>展示一个真实结果</span>
+          </div>
+          <i class="flow-arrow" data-lucide="arrow-right"></i>
+          <div>
+            <i data-lucide="gift"></i>
+            <strong>资源钩子</strong>
+            <span>模板、额度、内测资格</span>
+          </div>
+          <i class="flow-arrow" data-lucide="arrow-right"></i>
+          <div>
+            <i data-lucide="users"></i>
+            <strong>社区承接</strong>
+            <span>新人领取并完成第一步</span>
+          </div>
+          <i class="flow-arrow" data-lucide="arrow-right"></i>
+          <div>
+            <i data-lucide="sparkle"></i>
+            <strong>用户成果</strong>
+            <span>二次分发，吸引新人</span>
+          </div>
+        </div>
+
+        <div class="traffic-grid">
+          <article>
+            <h3>内容平台导流</h3>
+            <p>在 X、LinkedIn、Reddit、小红书、YouTube Shorts 发“结果型内容”。先展示一个成果，再告诉用户完整模板在哪里领。</p>
+            <p class="sample-copy">示例：我用这个 AI workflow 10 分钟完成一版竞品分析。完整模板放在 Discord，进群就能复制。</p>
+          </article>
+          <article>
+            <h3>KOL / Creator 合作</h3>
+            <p>找垂直领域创作者，让他用产品做一个真实案例。不要让他只发广告，要让他的粉丝看到“这个东西怎么用”。</p>
+            <p class="sample-copy">示例：和 AI marketing creator 联合做一场“30 分钟搭内容工作流”的 live session，报名入口放 Telegram。</p>
+          </article>
+          <article>
+            <h3>产品内导流</h3>
+            <p>用户完成第一次生成、遇到问题、看到新功能时，都可以引导去社区领取模板、反馈问题或展示结果。</p>
+            <p class="sample-copy">示例：生成完成后提示“把结果发到 #showcase，领取下一个进阶模板”。</p>
+          </article>
+          <article>
+            <h3>活动导流</h3>
+            <p>用 7 天 challenge、prompt battle、AMA、office hour 把“进群”变成“参加一个具体活动”。活动越具体，转化越容易。</p>
+            <p class="sample-copy">示例：参加 7 天 AI workflow challenge，作品统一发在 Discord。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sprint" class="section sprint-section">
+        <div class="section-heading">
+          <p class="section-kicker">短期快速拉新 SOP</p>
+          <h2>想让社群短期内快速进人，<br class="mobile-break" />先做一个“能被转发的理由”。</h2>
+          <p>
+            短期拉新的本质不是到处喊“快来加群”，而是做一个别人愿意转发、愿意领取、愿意参加的东西。下面这套流程适合 3 到 14 天内启动。
+          </p>
+        </div>
+
+        <div class="sprint-grid">
+          <article>
+            <span>01</span>
+            <h3>先做一个强钩子</h3>
+            <p>准备一个用户马上想要的东西：prompt 包、workflow 模板、免费额度、内测资格、行业案例库、活动名额。</p>
+            <div class="do-box">
+              <strong>小白照做：</strong>
+              <p>做一个 Notion / Google Doc 页面，标题写清楚“进群领取 30 个 AI 内容增长 Prompt”。</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>做一个超短报名入口</h3>
+            <p>不要让用户走复杂流程。一个链接、一个二维码、一个清楚的领取说明就够了。</p>
+            <div class="do-box">
+              <strong>小白照做：</strong>
+              <p>Telegram 置顶消息写“1. 进群 2. 点资源链接 3. 回复你的使用场景”。</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>先找 30 个种子成员</h3>
+            <p>不要等陌生人自然进来。先邀请朋友、早期用户、创作者、同领域从业者，让群里有第一批真实互动。</p>
+            <div class="do-box">
+              <strong>小白照做：</strong>
+              <p>私信 30 个人：我在做一个 AI workflow 社区，里面有模板包，想邀请你先进来试用。</p>
+            </div>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>连续 7 天发结果型内容</h3>
+            <p>每天发一个真实案例，不要只发口号。内容结构可以固定：问题是什么、AI 怎么做、结果如何、模板在哪里领。</p>
+            <div class="do-box">
+              <strong>小白照做：</strong>
+              <p>每天发一条：“我用这个 prompt 做了 X，完整版本在群里。”</p>
+            </div>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>找 5 到 10 个小型合作方</h3>
+            <p>不一定要找大 KOL。小型 newsletter、垂直社群、工具博主、校园社群、创作者群，转化可能更高。</p>
+            <div class="do-box">
+              <strong>小白照做：</strong>
+              <p>给合作方一个专属资源包和专属邀请链接，方便追踪哪个渠道带来的人最多。</p>
+            </div>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>设置邀请奖励</h3>
+            <p>让老成员有理由带新成员。奖励可以是免费额度、高级模板、活动优先席位、官方展示机会。</p>
+            <div class="do-box">
+              <strong>小白照做：</strong>
+              <p>邀请 3 人解锁进阶模板；邀请 10 人进入 beta tester 名单。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="launch-plan">
+          <h3>一个 72 小时快速拉新版本</h3>
+          <div class="launch-steps">
+            <div>
+              <strong>第 1 天：准备</strong>
+              <p>搭好 Telegram / Discord、置顶消息、资源包、邀请链接、欢迎语。</p>
+            </div>
+            <div>
+              <strong>第 2 天：集中发布</strong>
+              <p>在 3 到 5 个外部平台发结果型内容，同时私信种子用户和合作方。</p>
+            </div>
+            <div>
+              <strong>第 3 天：制造热闹感</strong>
+              <p>展示新成员问题、作品截图、领取人数、活动报名进度，推动二次转发。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="warning-box">
+          <i data-lucide="alert-triangle"></i>
+          <p>
+            快速拉新可以带来人数，但不要只追求“群里很多人”。如果新人进来后没有资源、没有活动、没有下一步，很快就会变成沉默群。
+          </p>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section roadmap-section">
+        <div class="section-heading">
+          <p class="section-kicker">30 天执行路线图</p>
+          <h2>从第一天到第 30 天，<br class="mobile-break" />每一周都要有明确动作。</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>第 1 周</span>
+            <h3>搭好地基</h3>
+            <p>确定社区定位、频道结构、欢迎语、置顶消息、starter kit、FAQ 和基础规则。</p>
+          </article>
+          <article>
+            <span>第 2 周</span>
+            <h3>邀请种子用户</h3>
+            <p>从已有用户、创作者、朋友、早期 beta 用户中邀请 50 到 100 个高质量成员，主动聊需求。</p>
+          </article>
+          <article>
+            <span>第 3 周</span>
+            <h3>启动第一个活动</h3>
+            <p>做一次 7 天 challenge、workshop 或 prompt battle，把用户成果集中展示出来。</p>
+          </article>
+          <article>
+            <span>第 4 周</span>
+            <h3>复盘并放大</h3>
+            <p>整理最佳案例，发到外部平台；复盘来源、激活、留存和产品转化，决定下个月重点。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="templates" class="section templates-section">
+        <div class="section-heading compact">
+          <p class="section-kicker">可直接改用的模板</p>
+          <h2>好的社区运营，<br class="mobile-break" />一定能落到具体文案和动作。</h2>
+        </div>
+
+        <div class="template-grid">
+          <article class="template-block">
+            <div class="template-head">
+              <h3>Discord 欢迎语</h3>
+              <button class="copy-button" type="button" data-copy-target="discord-welcome">
+                <i data-lucide="copy"></i>
+                复制
+              </button>
+            </div>
+            <pre id="discord-welcome"><code>欢迎来到 AI Workflow Lab。
+这里不是普通交流群，而是帮你更快用 AI 做出实际结果的地方。
+
+第一步：
+1. 去 #start-here 看 3 分钟上手指南
+2. 去 #prompt-library 领取 starter kit
+3. 在 #use-cases 说一句：你想用 AI 解决什么问题
+
+我们每周会更新一个可复制的 workflow，也会展示社区成员的最佳作品。</code></pre>
+          </article>
+
+          <article class="template-block">
+            <div class="template-head">
+              <h3>Telegram 置顶消息</h3>
+              <button class="copy-button" type="button" data-copy-target="telegram-pin">
+                <i data-lucide="copy"></i>
+                复制
+              </button>
+            </div>
+            <pre id="telegram-pin"><code>欢迎加入。
+这个群每天分享一个能马上用的 AI prompt / workflow。
+
+新成员可以先做三件事：
+1. 领取 starter kit：链接
+2. 查看本周活动：链接
+3. 提交你的使用场景：链接
+
+完整模板库和作品展示区在 Discord：链接</code></pre>
+          </article>
+
+          <article class="template-block">
+            <div class="template-head">
+              <h3>7 天活动文案</h3>
+              <button class="copy-button" type="button" data-copy-target="challenge-copy">
+                <i data-lucide="copy"></i>
+                复制
+              </button>
+            </div>
+            <pre id="challenge-copy"><code>7 天 AI Workflow Challenge 开始。
+每天只需要 15 分钟，用一个模板完成一个真实任务。
+
+你会得到：
+- 7 个可复制 prompt
+- 7 个工作流示例
+- 社区作品展示机会
+- 优秀作品可获得免费 credits / beta access
+
+参加方式：加入 Discord，并在 #weekly-challenge 发布你的结果。</code></pre>
+          </article>
+
+          <article class="template-block">
+            <div class="template-head">
+              <h3>短期拉新帖</h3>
+              <button class="copy-button" type="button" data-copy-target="sprint-copy">
+                <i data-lucide="copy"></i>
+                复制
+              </button>
+            </div>
+            <pre id="sprint-copy"><code>我整理了一套 AI Workflow Starter Kit。
+适合想用 AI 做内容、调研、营销、自动化的人。
+
+里面有：
+- 30 个可直接复制的 prompt
+- 5 个真实 workflow 示例
+- 1 个新手上手清单
+
+领取方式：
+加入 Telegram / Discord，置顶消息里可以直接拿。
+如果你愿意，也可以在群里发你的使用场景，我会挑一些帮大家改成 workflow。</code></pre>
+          </article>
+        </div>
+      </section>
+
+      <section id="metrics" class="section metrics-section">
+        <div class="section-heading compact">
+          <p class="section-kicker">指标看板</p>
+          <h2>社区增长不能只看<br class="mobile-break" />“群里多少人”。</h2>
+        </div>
+        <div class="scoreboard">
+          <article>
+            <span>拉新</span>
+            <strong>新增成员、渠道来源、邀请转化率</strong>
+            <p>回答：人从哪里来，哪个渠道质量最好。</p>
+          </article>
+          <article>
+            <span>激活</span>
+            <strong>新人 24 小时发言率、资源领取率</strong>
+            <p>回答：人进来以后有没有完成第一步。</p>
+          </article>
+          <article>
+            <span>互动</span>
+            <strong>DAU / WAU、回复率、活动参与率</strong>
+            <p>回答：社区是不是有真实交流。</p>
+          </article>
+          <article>
+            <span>业务</span>
+            <strong>注册、产品使用、付费、反馈数量</strong>
+            <p>回答：社区有没有帮助产品增长。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq-section">
+        <div class="section-heading">
+          <p class="section-kicker">常见运营问题</p>
+          <h2>社区做起来后，<br class="mobile-break" />最常遇到的是这些具体问题。</h2>
+        </div>
+
+        <div class="faq-list">
+          <details open>
+            <summary>从 0 到 1 搭社区，第一步做什么？</summary>
+            <p>第一步不是建群，而是定义社区价值。比如 AI 产品社区可以是 prompt 实验室、workflow 模板库、beta 用户反馈池或用户作品展示区。用户知道进来能获得什么，社区才有留存基础。</p>
+          </details>
+          <details>
+            <summary>群里很冷清怎么办？</summary>
+            <p>先判断冷清原因：用户不精准、话题太泛、没有固定活动，还是新人不知道怎么参与。冷启动阶段需要主动制造场景，比如每日 workflow、每周 challenge、点名邀请种子用户分享结果。</p>
+          </details>
+          <details>
+            <summary>怎么把社区反馈变成产品洞察？</summary>
+            <p>把反馈分成 bug、功能请求、使用场景、困惑点和用户好评。每周整理重复出现的问题、用户原话、截图和优先级，同步给产品团队，用社区反馈帮助 roadmap 判断。</p>
+          </details>
+          <details>
+            <summary>怎么证明社区运营对业务有价值？</summary>
+            <p>把社区数据和产品漏斗连起来看，不只看成员数，还看社区成员到注册、首次使用、活跃、付费、推荐的转化。社区如果能持续产生 UGC、反馈和转化，就不是成本中心，而是增长引擎。</p>
+          </details>
+          <details>
+            <summary>Telegram 和 Discord 同时做，会不会重复？</summary>
+            <p>不会。Telegram 承担快速触达和流量承接，Discord 承担结构化沉淀和核心用户运营。简单说，Telegram 让更多人知道发生了什么，Discord 让真正感兴趣的人留下来深度参与。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="closing-section" aria-label="总结">
+        <p class="section-kicker">最后记住这一句</p>
+        <h2>社区运营不是维护群聊，<br class="mobile-break" />而是设计用户从“加入”到“产出结果”再到“带来新人”的完整路径。</h2>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>AI 产品社区增长手册</span>
+      <a href="#top">回到顶部</a>
+    </footer>
+
+    <script src="./assets/lucide.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
