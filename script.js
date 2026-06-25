@@ -261,6 +261,35 @@ const projects = [
     links: [],
   },
   {
+    title: "HypeX / D3X — Web3 Community Growth Case Study",
+    displayOrder: 42,
+    category: "Community Growth / Web3 Operating Playbook",
+    track: "strategic",
+    filters: ["growth", "creator", "product", "ai"],
+    featured: true,
+    tags: ["Web3 community", "Telegram", "Discord", "Zealy quests", "Product activation"],
+    quick: ["Case study & playbook", "Telegram, Discord, Zealy, points, campaigns", "Plain-language Web3 user education"],
+    cn: "用通俗语言拆解 HypeX / D3X 这类 Web3 项目如何用 Telegram、Discord、Zealy、积分和活动，把社群关注转化为产品使用。",
+    summary:
+      "A bilingual, plain-language case study and operating playbook showing how a Web3 trading project can turn community attention into user education, quest participation, product trials, and long-term engagement.",
+    caseNotes: {
+      context: "Project-participation case around the HypeX / D3X ecosystem, focused on community growth rather than technical trading details.",
+      role: "Community growth analyst / Web3 operating playbook builder.",
+      signal:
+        "Explains a complex Web3 project in simple language, then turns Telegram, Discord, Zealy quests, points, badges, campaigns, metrics, and safety controls into a reusable community operating system.",
+      signalCn: "体现 Web3 用户教育、社区增长漏斗、活动设计、任务系统和产品激活思维。",
+    },
+    media: [
+      {
+        src: "./assets/project-covers/hypex-d3x-community-growth.svg",
+        alt: "HypeX D3X Web3 community growth system diagram",
+        cover: true,
+        wide: true,
+      },
+    ],
+    links: [{ label: "Open case study", url: "./hypex-d3x-community.html" }],
+  },
+  {
     title: "BrandYou — AI-Native Community & Brand System",
     displayOrder: 45,
     category: "Co-founder / Partner / AI-Native Community",
@@ -731,6 +760,20 @@ const projectCopyZh = {
       signal: "理解品牌出海、社区传播和创作者资源整合，能把分散资源组织成可交付的增长服务。",
       signalCn: "",
     },
+  },
+  "HypeX / D3X — Web3 Community Growth Case Study": {
+    title: "HypeX / D3X — Web3 社区增长案例",
+    category: "社区增长 / Web3 运营手册",
+    tags: ["Web3 社区", "Telegram", "Discord", "Zealy 任务", "产品激活"],
+    quick: ["案例分析与运营手册", "Telegram、Discord、Zealy、积分、活动", "用通俗语言做 Web3 用户教育"],
+    summary: "一个中英文双语案例页，用通俗语言解释 HypeX / D3X 这类 Web3 项目如何把社群关注转化为任务参与、产品体验和长期社区留存。",
+    caseNotes: {
+      context: "围绕我参与过的 HypeX / D3X 生态项目整理的案例，重点不是交易技术细节，而是社区增长和用户激活。",
+      role: "社区增长分析 / Web3 运营手册搭建。",
+      signal: "能把复杂 Web3 项目讲清楚，并把 Telegram、Discord、Zealy 任务、积分、badge、活动、指标和风险控制整理成可复用的社区运营系统。",
+      signalCn: "",
+    },
+    linkLabels: { "Open case study": "打开案例页" },
   },
   "BrandYou — AI-Native Community & Brand System": {
     title: "BrandYou — AI Native 社群与品牌系统",
