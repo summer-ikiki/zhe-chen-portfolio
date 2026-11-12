@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="theme-color" content="#f4f3ef" />
+    <link rel="icon" href="data:," />
+    <title>Migoo US GTM Strategy | Summer Chen</title>
+    <meta
+      name="description"
+      content="An independent outside-in US go-to-market proposal for Migoo, prepared by Summer Chen."
+    />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar" aria-label="Presentation navigation">
+      <a class="wordmark" href="#opening" aria-label="Migoo US GTM home">
+        <span class="mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>MIGOO <b>/ US GTM</b></span>
+      </a>
+      <nav class="chapter-nav" aria-label="Sections">
+        <a href="#positioning" data-nav="positioning" data-i18n="nav.strategy">Strategy</a>
+        <a href="#sprint" data-nav="sprint" data-i18n="nav.demo">Sprint</a>
+        <a href="#pilot" data-nav="pilot" data-i18n="nav.pilot">Pilot</a>
+        <a href="#plan" data-nav="plan" data-i18n="nav.plan">90 Days</a>
+        <a href="#measurement" data-nav="measurement" data-i18n="nav.metrics">Metrics</a>
+      </nav>
+      <div class="top-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+        </div>
+        <button class="icon-button" id="fullscreenButton" type="button" aria-label="Enter fullscreen" title="Fullscreen">
+          <i data-lucide="maximize-2"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel hero" id="opening" data-section="opening">
+        <div class="hero-media" aria-hidden="true">
+          <img src="./assets/luma-campaign.png" alt="" />
+          <div class="hero-wash"></div>
+        </div>
+        <div class="hero-content">
+          <p class="kicker" data-i18n="hero.kicker">AN OUTSIDE-IN US MARKET PROPOSAL</p>
+          <h1 data-i18n="hero.title">From AI video tool<br />to <em>creative growth system.</em></h1>
+          <p class="hero-lead" data-i18n="hero.lead">
+            Position Migoo as the AI performance creative team for DTC brands and agencies — turning one product into a repeatable pipeline of campaign-ready assets.
+          </p>
+          <div class="hero-meta">
+            <span data-i18n="hero.author">Prepared by Summer Chen</span>
+            <span>November 2026</span>
+          </div>
+        </div>
+        <div class="hero-thesis">
+          <span class="thesis-number">01</span>
+          <p data-i18n="hero.thesis">Sell usable campaign output, not generation volume.</p>
+        </div>
+      </section>
+
+      <section class="panel section-shell" id="positioning" data-section="positioning">
+        <div class="section-number">01</div>
+        <div class="section-head">
+          <p class="kicker coral" data-i18n="positioning.kicker">THE CATEGORY DECISION</p>
+          <h2 data-i18n="positioning.title">Do not enter as another AI video generator.</h2>
+          <p class="section-intro" data-i18n="positioning.intro">
+            The US market already has tools for URL-to-video, avatars, editing and UGC generation. Migoo can win by owning the workflow from product brief to campaign-ready creative.
+          </p>
+        </div>
+        <div class="positioning-stage">
+          <div class="old-category">
+            <span class="label" data-i18n="positioning.oldLabel">Crowded category</span>
+            <h3 data-i18n="positioning.oldTitle">AI video generator</h3>
+            <ul>
+              <li data-i18n="positioning.old1">Feature-led comparison</li>
+              <li data-i18n="positioning.old2">Credit and price pressure</li>
+              <li data-i18n="positioning.old3">One-off experimentation</li>
+            </ul>
+          </div>
+          <div class="category-arrow" aria-hidden="true">
+            <i data-lucide="arrow-right"></i>
+          </div>
+          <div class="new-category">
+            <span class="label" data-i18n="positioning.newLabel">Ownable position</span>
+            <h3 data-i18n="positioning.newTitle">AI performance creative team</h3>
+            <ul>
+              <li data-i18n="positioning.new1">Outcome-led campaign packs</li>
+              <li data-i18n="positioning.new2">Repeatable production workflow</li>
+              <li data-i18n="positioning.new3">Brand and agency expansion</li>
+            </ul>
+          </div>
+        </div>
+        <div class="message-strip">
+          <span data-i18n="positioning.messageLabel">Market-facing promise</span>
+          <strong data-i18n="positioning.message">Turn one product into a month of campaign-ready creative.</strong>
+        </div>
+      </section>
+
+      <section class="panel section-shell audience-panel" id="audience" data-section="audience">
+        <div class="section-number">02</div>
+        <div class="section-head compact">
+          <p class="kicker blue" data-i18n="audience.kicker">BEACHHEAD MARKET</p>
+          <h2 data-i18n="audience.title">Start where creative fatigue is already expensive.</h2>
+        </div>
+        <div class="audience-tabs" role="tablist" aria-label="Target audiences">
+          <button class="audience-tab active" data-audience="dtc" role="tab" aria-selected="true">
+            <i data-lucide="shopping-bag"></i><span data-i18n="audience.dtcTab">DTC Growth Teams</span>
+          </button>
+          <button class="audience-tab" data-audience="agency" role="tab" aria-selected="false">
+            <i data-lucide="layers-3"></i><span data-i18n="audience.agencyTab">Performance Agencies</span>
+          </button>
+        </div>
+        <div class="audience-layout">
+          <article class="audience-story">
+            <div class="audience-tag" id="audienceTag">PRIMARY ICP</div>
+            <h3 id="audienceTitle">Lean teams, relentless creative demand.</h3>
+            <p id="audienceDescription">
+              US e-commerce brands already investing in Meta, TikTok or Amazon, but lacking the production capacity to refresh creative every week.
+            </p>
+            <div class="jobs-grid">
+              <div><span data-i18n="audience.pain">Pain</span><strong id="audiencePain">Creative fatigue outpaces production</strong></div>
+              <div><span data-i18n="audience.buy">Why they buy</span><strong id="audienceBuy">More testable assets, faster</strong></div>
+              <div><span data-i18n="audience.expand">Expansion</span><strong id="audienceExpand">New products, channels and teams</strong></div>
+            </div>
+          </article>
+          <div class="priority-map" aria-label="Market priority map">
+            <div class="axis axis-y"><span data-i18n="audience.highRepeat">High repeat value</span><span data-i18n="audience.lowRepeat">Low repeat value</span></div>
+            <div class="axis axis-x"><span data-i18n="audience.lowLeverage">Low leverage</span><span data-i18n="audience.highLeverage">High leverage</span></div>
+            <div class="map-grid"></div>
+            <button class="map-bubble bubble-agency" data-target-audience="agency"><b>01</b><span data-i18n="audience.mapAgency">Agencies</span></button>
+            <button class="map-bubble bubble-dtc active" data-target-audience="dtc"><b>02</b><span data-i18n="audience.mapDtc">DTC brands</span></button>
+            <div class="map-bubble bubble-seller"><span data-i18n="audience.mapSeller">Marketplace sellers</span></div>
+            <div class="map-bubble bubble-creator"><span data-i18n="audience.mapCreator">General creators</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel sprint-panel" id="sprint" data-section="sprint">
+        <div class="sprint-copy">
+          <p class="kicker mint" data-i18n="sprint.kicker">THE COMMERCIAL WEDGE</p>
+          <h2 data-i18n="sprint.title">Migoo Creative Sprint</h2>
+          <p data-i18n="sprint.intro">A concrete offer that makes the product’s value visible before asking the market to understand the underlying agent.</p>
+          <div class="brief-card">
+            <div class="brief-top">
+              <span data-i18n="sprint.example">ILLUSTRATIVE CAMPAIGN</span>
+              <span>LUMA / SKINCARE</span>
+            </div>
+            <div class="brief-row"><span data-i18n="sprint.input">Input</span><strong data-i18n="sprint.inputValue">Product URL + brand kit + goal</strong></div>
+            <div class="brief-row"><span data-i18n="sprint.audience">Audience</span><strong data-i18n="sprint.audienceValue">US Gen Z skincare buyers</strong></div>
+            <div class="brief-row"><span data-i18n="sprint.channels">Channels</span><strong>TikTok / Meta / Reels</strong></div>
+            <div class="brief-row"><span data-i18n="sprint.output">Output</span><strong data-i18n="sprint.outputValue">3 angles · 12 assets · 3 formats</strong></div>
+          </div>
+        </div>
+        <div class="creative-stage">
+          <div class="creative-card creator-card">
+            <div class="creative-image crop-left"><img src="./assets/luma-campaign.png" alt="Illustrative creator-led skincare ad" /></div>
+            <div class="creative-caption"><span>01</span><strong data-i18n="sprint.angle1">Creator proof</strong><small data-i18n="sprint.angle1Sub">Real-routine hook</small></div>
+          </div>
+          <div class="creative-card product-card">
+            <div class="creative-image crop-center"><img src="./assets/luma-campaign.png" alt="Illustrative skincare product ad" /></div>
+            <div class="creative-caption"><span>02</span><strong data-i18n="sprint.angle2">Product desire</strong><small data-i18n="sprint.angle2Sub">Texture + sensory payoff</small></div>
+          </div>
+          <div class="creative-card routine-card">
+            <div class="creative-image crop-right"><img src="./assets/luma-campaign.png" alt="Illustrative skincare routine ad" /></div>
+            <div class="creative-caption"><span>03</span><strong data-i18n="sprint.angle3">Routine demo</strong><small data-i18n="sprint.angle3Sub">Use case + objection handling</small></div>
+          </div>
+          <div class="output-chip chip-one"><i data-lucide="smartphone"></i><span>9:16</span></div>
+          <div class="output-chip chip-two"><i data-lucide="captions"></i><span data-i18n="sprint.hooks">5 hooks</span></div>
+          <div class="output-chip chip-three"><i data-lucide="repeat-2"></i><span data-i18n="sprint.variants">12 variants</span></div>
+        </div>
+      </section>
+
+      <section class="panel section-shell engine-panel" id="engine" data-section="engine">
+        <div class="section-number">04</div>
+        <div class="section-head compact">
+          <p class="kicker coral" data-i18n="engine.kicker">THE GROWTH SYSTEM</p>
+          <h2 data-i18n="engine.title">Evidence first. Distribution second. Paid scale third.</h2>
+        </div>
+        <div class="engine-track">
+          <article class="engine-step step-1">
+            <span>01</span><i data-lucide="users"></i><h3 data-i18n="engine.step1">Design partners</h3><p data-i18n="engine.step1Sub">10 agencies + 20 brands</p>
+          </article>
+          <article class="engine-step step-2">
+            <span>02</span><i data-lucide="clapperboard"></i><h3 data-i18n="engine.step2">Creator proof</h3><p data-i18n="engine.step2Sub">Performance creators, not vanity reach</p>
+          </article>
+          <article class="engine-step step-3">
+            <span>03</span><i data-lucide="network"></i><h3 data-i18n="engine.step3">Agency distribution</h3><p data-i18n="engine.step3Sub">One partner, multiple brands</p>
+          </article>
+          <article class="engine-step step-4">
+            <span>04</span><i data-lucide="refresh-cw"></i><h3 data-i18n="engine.step4">Repeat workflow</h3><p data-i18n="engine.step4Sub">Weekly creative refresh</p>
+          </article>
+          <article class="engine-step step-5">
+            <span>05</span><i data-lucide="trending-up"></i><h3 data-i18n="engine.step5">Scalable paid</h3><p data-i18n="engine.step5Sub">Amplify proven messages</p>
+          </article>
+        </div>
+        <div class="engine-principle">
+          <i data-lucide="shield-check"></i>
+          <p data-i18n="engine.principle">Paid media scales a working value loop; it does not create one.</p>
+        </div>
+      </section>
+
+      <section class="panel section-shell pilot-panel" id="pilot" data-section="pilot">
+        <div class="section-number">05</div>
+        <div class="pilot-header">
+          <div class="section-head compact">
+            <p class="kicker coral" data-i18n="pilot.kicker">THE FIRST COMMERCIAL PROOF</p>
+            <h2 data-i18n="pilot.title">Four weeks to prove repeat value.</h2>
+            <p class="section-intro" data-i18n="pilot.intro">A design-partner cohort built to answer who reuses Migoo, why they pay and which workflow deserves scale.</p>
+          </div>
+          <div class="cohort-counts" aria-label="Pilot cohort">
+            <div><strong>10</strong><span data-i18n="pilot.agencies">US agencies</span></div>
+            <i data-lucide="plus"></i>
+            <div><strong>20</strong><span data-i18n="pilot.brands">DTC brands</span></div>
+          </div>
+        </div>
+        <div class="pilot-weeks">
+          <article>
+            <span>W1</span><i data-lucide="package-open"></i><h3 data-i18n="pilot.w1">Onboard</h3><p data-i18n="pilot.w1s">Brand kit, product feed, current ads and campaign goal</p>
+          </article>
+          <article>
+            <span>W2</span><i data-lucide="wand-sparkles"></i><h3 data-i18n="pilot.w2">Create</h3><p data-i18n="pilot.w2s">First Creative Sprint across hooks, formats and channels</p>
+          </article>
+          <article>
+            <span>W3</span><i data-lucide="repeat"></i><h3 data-i18n="pilot.w3">Iterate</h3><p data-i18n="pilot.w3s">Second-round variants based on selection and channel feedback</p>
+          </article>
+          <article>
+            <span>W4</span><i data-lucide="badge-check"></i><h3 data-i18n="pilot.w4">Decide</h3><p data-i18n="pilot.w4s">Review usable output, repeat behavior and willingness to pay</p>
+          </article>
+        </div>
+        <div class="pilot-bottom">
+          <div class="pilot-criteria">
+            <span class="mini-label" data-i18n="pilot.criteria">PILOT SUCCESS CRITERIA</span>
+            <div class="criteria-grid">
+              <div><i data-lucide="timer"></i><span data-i18n="pilot.c1">Time to first usable asset</span></div>
+              <div><i data-lucide="download"></i><span data-i18n="pilot.c2">Assets selected and exported</span></div>
+              <div><i data-lucide="refresh-ccw"></i><span data-i18n="pilot.c3">Second project within 7 days</span></div>
+              <div><i data-lucide="credit-card"></i><span data-i18n="pilot.c4">Willingness to continue paid</span></div>
+              <div><i data-lucide="folders"></i><span data-i18n="pilot.c5">Second client added by agency</span></div>
+              <div><i data-lucide="coins"></i><span data-i18n="pilot.c6">Cost per usable export</span></div>
+            </div>
+          </div>
+          <aside class="challenge-card">
+            <span data-i18n="pilot.challengeLabel">CREATOR-LED LAUNCH</span>
+            <h3 data-i18n="pilot.challengeTitle">One Product.<br />30 Creatives.<br />7 Days.</h3>
+            <p data-i18n="pilot.challengeBody">Performance creators and media buyers turn one brief into public proof, product feedback and reusable sales content.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="panel signal-panel" id="signals" data-section="signals">
+        <div class="signal-intro">
+          <p class="kicker mint" data-i18n="signals.kicker">US MARKET → ASIA HQ</p>
+          <h2 data-i18n="signals.title">Turn local signals into product decisions.</h2>
+          <p data-i18n="signals.intro">Localization is not translation. It is a disciplined system for converting customer friction, commercial resistance and creative quality into decisions the product team can act on.</p>
+        </div>
+        <div class="signal-flow" aria-label="Product feedback framework">
+          <div><span>01</span><strong data-i18n="signals.f1">Segment + job</strong></div>
+          <i data-lucide="chevron-right"></i>
+          <div><span>02</span><strong data-i18n="signals.f2">Friction + evidence</strong></div>
+          <i data-lucide="chevron-right"></i>
+          <div><span>03</span><strong data-i18n="signals.f3">Business impact</strong></div>
+          <i data-lucide="chevron-right"></i>
+          <div><span>04</span><strong data-i18n="signals.f4">Proposed change</strong></div>
+          <i data-lucide="chevron-right"></i>
+          <div><span>05</span><strong data-i18n="signals.f5">Success metric</strong></div>
+        </div>
+        <div class="insight-layout">
+          <div class="insight-grid">
+            <article><span>01</span><h3 data-i18n="signals.i1">The real competitor is the current workflow.</h3><p data-i18n="signals.i1s">Win against agencies, freelancers, internal production and fragmented AI stacks — not only other models.</p></article>
+            <article><span>02</span><h3 data-i18n="signals.i2">Agency is both channel and stress test.</h3><p data-i18n="signals.i2s">Multi-client work reveals the need for brand kits, approvals, workspaces and volume economics.</p></article>
+            <article><span>03</span><h3 data-i18n="signals.i3">Activation means “willing to use.”</h3><p data-i18n="signals.i3s">The first generation is not value. Selection, edit or export of a campaign-ready asset is.</p></article>
+            <article><span>04</span><h3 data-i18n="signals.i4">Human creator + AI earns more trust.</h3><p data-i18n="signals.i4s">Combine human insight and credibility with AI variation speed instead of positioning replacement.</p></article>
+          </div>
+          <aside class="weekly-cadence">
+            <span class="mini-label" data-i18n="signals.cadence">WEEKLY OPERATING CADENCE</span>
+            <ol>
+              <li><b>MON</b><span data-i18n="signals.mon">Customer signals</span></li>
+              <li><b>TUE</b><span data-i18n="signals.tue">Creative quality review</span></li>
+              <li><b>WED</b><span data-i18n="signals.wed">Product prioritization</span></li>
+              <li><b>THU</b><span data-i18n="signals.thu">Market experiments</span></li>
+              <li><b>FRI</b><span data-i18n="signals.fri">US–HQ decision memo</span></li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section class="panel section-shell plan-panel" id="plan" data-section="plan">
+        <div class="section-number">07</div>
+        <div class="section-head compact">
+          <p class="kicker blue" data-i18n="plan.kicker">FIRST 90 DAYS</p>
+          <h2 data-i18n="plan.title">Three decisions, not three activity lists.</h2>
+        </div>
+        <div class="timeline">
+          <article class="phase phase-one">
+            <div class="phase-day">01—30</div>
+            <div class="phase-color"></div>
+            <p class="phase-question" data-i18n="plan.q1">Where is the first repeatable value?</p>
+            <h3 data-i18n="plan.p1">Diagnose</h3>
+            <ul>
+              <li data-i18n="plan.p1a">30–40 customer interviews</li>
+              <li data-i18n="plan.p1b">Five-vertical quality audit</li>
+              <li data-i18n="plan.p1c">Funnel baseline + ICP pages</li>
+            </ul>
+            <div class="success-signal"><span data-i18n="plan.signal">Signal</span><strong data-i18n="plan.s1">Clear ICP × use case</strong></div>
+          </article>
+          <article class="phase phase-two">
+            <div class="phase-day">31—60</div>
+            <div class="phase-color"></div>
+            <p class="phase-question" data-i18n="plan.q2">What will customers reuse and pay for?</p>
+            <h3 data-i18n="plan.p2">Prove</h3>
+            <ul>
+              <li data-i18n="plan.p2a">Three commercial offers</li>
+              <li data-i18n="plan.p2b">Guided design-partner cohorts</li>
+              <li data-i18n="plan.p2c">Six to ten evidence-led cases</li>
+            </ul>
+            <div class="success-signal"><span data-i18n="plan.signal">Signal</span><strong data-i18n="plan.s2">Repeat usage + willingness to pay</strong></div>
+          </article>
+          <article class="phase phase-three">
+            <div class="phase-day">61—90</div>
+            <div class="phase-color"></div>
+            <p class="phase-question" data-i18n="plan.q3">Which loop deserves scale?</p>
+            <h3 data-i18n="plan.p3">Scale</h3>
+            <ul>
+              <li data-i18n="plan.p3a">Agency referral + creator affiliate</li>
+              <li data-i18n="plan.p3b">Benchmark content + public challenge</li>
+              <li data-i18n="plan.p3c">High-intent paid acquisition</li>
+            </ul>
+            <div class="success-signal"><span data-i18n="plan.signal">Signal</span><strong data-i18n="plan.s3">Repeatable acquisition-to-paid loop</strong></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel dashboard-panel" id="measurement" data-section="measurement">
+        <div class="dashboard-header">
+          <div>
+            <p class="kicker mint" data-i18n="metrics.kicker">THE OPERATING SYSTEM</p>
+            <h2 data-i18n="metrics.title">Measure usable output and repeat value.</h2>
+          </div>
+          <div class="data-note"><span></span><span data-i18n="metrics.note">Illustrative data only</span></div>
+        </div>
+        <div class="dashboard-grid">
+          <article class="north-star">
+            <div class="metric-label" data-i18n="metrics.northLabel">NORTH STAR</div>
+            <div class="north-value"><strong>3+</strong><span data-i18n="metrics.northValue">campaign-ready assets exported weekly</span></div>
+            <div class="sparkline" aria-hidden="true"><span style="height: 22%"></span><span style="height: 34%"></span><span style="height: 31%"></span><span style="height: 48%"></span><span style="height: 58%"></span><span style="height: 76%"></span><span style="height: 88%"></span></div>
+          </article>
+          <article class="funnel-card">
+            <div class="metric-label" data-i18n="metrics.funnelLabel">ACTIVATION FUNNEL</div>
+            <div class="funnel-step"><span data-i18n="metrics.f1">Qualified visit</span><b>100%</b><i style="--width:100%"></i></div>
+            <div class="funnel-step"><span data-i18n="metrics.f2">Product imported</span><b>58%</b><i style="--width:58%"></i></div>
+            <div class="funnel-step"><span data-i18n="metrics.f3">First usable asset</span><b>37%</b><i style="--width:37%"></i></div>
+            <div class="funnel-step"><span data-i18n="metrics.f4">Second project</span><b>21%</b><i style="--width:21%"></i></div>
+          </article>
+          <article class="cohort-card">
+            <div class="metric-label" data-i18n="metrics.cohortLabel">7-DAY REPEAT BY COHORT</div>
+            <div class="cohort-row"><span data-i18n="metrics.agency">Agency</span><div><i style="--width:72%"></i></div><b>36%</b></div>
+            <div class="cohort-row"><span data-i18n="metrics.dtc">DTC brand</span><div><i style="--width:48%"></i></div><b>24%</b></div>
+            <div class="cohort-row"><span data-i18n="metrics.seller">Seller</span><div><i style="--width:30%"></i></div><b>15%</b></div>
+            <p data-i18n="metrics.cohortNote">Scale the cohort with stronger repeat value, not the cheapest signup.</p>
+          </article>
+          <article class="metric-card metric-a"><span data-i18n="metrics.time">Time to first usable asset</span><strong>08:42</strong><small data-i18n="metrics.timeUnit">minutes</small></article>
+          <article class="metric-card metric-b"><span data-i18n="metrics.cost">Cost per usable export</span><strong>$1.84</strong><small data-i18n="metrics.costUnit">illustrative</small></article>
+          <article class="metric-card metric-c"><span data-i18n="metrics.paid">Activated → paid</span><strong>18%</strong><small data-i18n="metrics.paidUnit">target signal</small></article>
+        </div>
+      </section>
+
+      <section class="panel section-shell fit-panel" id="fit" data-section="fit">
+        <div class="section-number">07</div>
+        <div class="fit-layout">
+          <div class="fit-copy">
+            <p class="kicker coral" data-i18n="fit.kicker">OPERATOR FIT</p>
+            <h2 data-i18n="fit.title">One role. Six connected systems.</h2>
+            <p data-i18n="fit.intro">The role needs more than channel marketing. It needs someone who can connect product value, creator behavior, commercial partnerships and operating metrics across the US and Asia.</p>
+          </div>
+          <div class="capability-grid">
+            <div><i data-lucide="rocket"></i><strong data-i18n="fit.c1">0→1 AI GTM</strong><span data-i18n="fit.c1s">Positioning, launch and growth systems</span></div>
+            <div><i data-lucide="users-round"></i><strong data-i18n="fit.c2">Creator ecosystems</strong><span data-i18n="fit.c2s">KOL, UGC, community and events</span></div>
+            <div><i data-lucide="handshake"></i><strong data-i18n="fit.c3">Partnerships</strong><span data-i18n="fit.c3s">Agency, B2B and channel development</span></div>
+            <div><i data-lucide="film"></i><strong data-i18n="fit.c4">Creative judgment</strong><span data-i18n="fit.c4s">Film, short video and production workflow</span></div>
+            <div><i data-lucide="chart-no-axes-combined"></i><strong data-i18n="fit.c5">Growth operations</strong><span data-i18n="fit.c5s">Funnels, CAC, ROI and experiments</span></div>
+            <div><i data-lucide="globe-2"></i><strong data-i18n="fit.c6">Cross-market execution</strong><span data-i18n="fit.c6s">US market with Asia HQ collaboration</span></div>
+          </div>
+        </div>
+        <div class="validation-questions">
+          <span data-i18n="fit.validate">WHAT I WOULD VALIDATE FIRST</span>
+          <ol>
+            <li data-i18n="fit.q1">Which product line and use case own the US goal?</li>
+            <li data-i18n="fit.q2">Where does today’s activation funnel break?</li>
+            <li data-i18n="fit.q3">What team, budget and product support can the market lead mobilize?</li>
+            <li data-i18n="fit.q4">What have early US users already taught us?</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="panel closing" id="closing" data-section="closing">
+        <div class="closing-inner">
+          <p class="kicker mint" data-i18n="closing.kicker">THE BET</p>
+          <h2 data-i18n="closing.title">Own the creative workflow,<br />not just the generation moment.</h2>
+          <p data-i18n="closing.body">Start with brands and agencies that already feel the cost of creative fatigue. Prove usable output, repeat behavior and paid value. Then scale the story the market has already validated.</p>
+          <div class="closing-signoff">
+            <span data-i18n="closing.author">Prepared by Summer Chen</span>
+            <a href="https://migoo.ai/" target="_blank" rel="noreferrer"><span data-i18n="closing.product">View Migoo</span><i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </div>
+        <footer>
+          <p data-i18n="closing.disclaimer">Independent outside-in proposal based on publicly available information. Illustrative campaign and metrics are clearly labeled.</p>
+          <div class="source-links">
+            <a href="https://migoo.ai/" target="_blank" rel="noreferrer">Migoo</a>
+            <a href="https://creatify.ai/features" target="_blank" rel="noreferrer">Creatify</a>
+            <a href="https://arcads.art/" target="_blank" rel="noreferrer">Arcads</a>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <div class="progress-rail" aria-hidden="true"><span id="progressBar"></span></div>
+  </body>
+</html>
