@@ -20,6 +20,7 @@
 .dau{margin-top:24px}.formula{border-left:3px solid var(--forest);background:#edf2eb;padding:10px 13px;margin:8px 0;font-weight:750}.note{color:var(--dim);font-size:14px;margin-top:10px}.metric{display:block;margin-top:8px;font-weight:750;color:var(--forest)}.flywheel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:12px 0}.flywheel article{border-left:3px solid #6b8a72;padding-left:12px}.flywheel p{margin-top:5px}.profile-grid{margin-top:16px}
 @media(max-width:600px){.flywheel{grid-template-columns:1fr}}
 .intro p.note{font-size:14px}
+.page-summary{margin:0 0 24px}
 </style>
 </head>
 <body>
@@ -27,6 +28,12 @@
 <header><strong>Summer Chen</strong><nav aria-label="页面导航"><a href="#capcut">CapCut 现在能做什么</a><a href="#moves">对手在做什么</a><a href="#learn">CapCut 可以学哪三招</a><a href="#growth">渠道与打法</a><a href="#test">怎么验证</a></nav></header>
 <main id="main">
 <section class="intro"><p class="kicker">CapCut（海外版剪映） · 北美市场</p><h1>CapCut 在和谁抢用户？</h1><p class="lead">同一段访谈，有人直接在 YouTube 剪，有人交给 OpusClip。CapCut 要证明的是：用自己的素材，更快剪出一条愿意发、还能自己改的短视频。</p><div class="example" aria-label="假设例子：一段长访谈变成三条短视频"><div><b>一段长访谈</b><small>你已经拍好了</small></div><div><b>AI 先剪出草稿</b><small>挑片段、加字幕</small></div><div><b>你改完再发</b><small>比如剪成三条短视频</small></div></div><p class="note"><strong>北美先试两个渠道：</strong>站内让老用户试 AI 粗剪，TikTok 和 Reels 上的达人演示带新用户开剪。<a href="#growth">看具体做法</a></p></section>
+<aside class="thesis page-summary" aria-label="三句话看懂本页">
+<strong>三句话看懂本页</strong>
+<p><b>判断：</b>AI 草稿谁都能做。CapCut 要赢的是「少改几次就能发，下周还会回来」。</p>
+<p><b>打法：</b>北美先用「把访谈剪成短视频」这一个任务，同时测站内老用户和达人带来的新用户。</p>
+<p><b>衡量：</b>首次导出 → 7 天内第二次导出，不把播放量当成 DAU。</p>
+</aside>
 <section class="section" id="capcut">
 <div class="frame"><div><h2>CapCut 现在能做什么？</h2><p class="lede">以前是「拍完了，打开 CapCut 剪」。现在也可以「有个想法，先让 AI 做一版」。AI 打底，你仍然决定哪句话放开头、哪里要重剪。</p><a class="source" href="https://www.capcut.com/newsroom/capcut-world-la" target="_blank" rel="noopener">CapCut 官方发布</a></div>
 <figure class="photo workflow"><figcaption>CapCut 工作流示意</figcaption><div class="track"><span>素材</span><div class="clips"><span class="clip">真实拍摄</span><span class="clip">生成补镜</span></div></div><div class="track"><span>AI 草稿</span><div class="clips"><span class="clip sky wide">选段、字幕、初步排序</span></div></div><div class="track"><span>人工编辑</span><div class="clips"><span class="clip clay">重排开头</span><span class="clip clay">精修并导出</span></div></div><p class="workflow-note">分析示意图，不是实际产品截图。</p></figure></div>
@@ -49,6 +56,16 @@
 <article class="move"><h3>留存：下次不用重新设置</h3><p>沿用上一条的字幕、画幅和片尾。</p><b class="metric">看：第 2 周留存</b></article>
 </div>
 <p class="note"><strong>我的假设：</strong>如果北美渗透率已经较高，增量可能更多来自频次和回流。渗透率和增量来源都需要用数据先验证。</p>
+</div>
+<div class="dau">
+<span class="state test">品牌衡量建议 · 尚未实测</span>
+<h3>从「剪辑工具」到「AI 创作平台」，怎么判断心智变了？</h3>
+<div class="quick profile-grid">
+<article class="move"><h3>搜索</h3><p>跟踪「AI video editor」「podcast to shorts」等词的搜索趋势、带 CapCut 的相关搜索量，以及 CapCut 在这些词的自然搜索可见度。</p></article>
+<article class="move"><h3>认知</h3><p>定期做小样本调研，不给选项，先问：「提到用 AI 做视频，你第一个想到谁？」</p></article>
+<article class="move"><h3>行为</h3><p>看新用户第一次打开 CapCut 时，从 AI 入口开始创作的比例。</p></article>
+</div>
+<p class="note">心智指标看趋势，最终要和首次导出、复用一起看。</p>
 </div>
 </section>
 <section class="section" id="moves">
@@ -93,13 +110,14 @@
 <p class="note"><strong>指标链：</strong>看演示 → 开始编辑 → 首次导出 → 7 天内第二次导出。</p>
 <div class="steps"><div><b>看演示</b>看别人怎么剪</div><div><b>自己试</b>用自己的素材</div><div><b>剪完一条</b>导出愿意发的短片</div><div><b>再做一条</b>七天内回来继续剪</div></div>
 <p><strong>最后看下周：</strong>有人看、没人剪完，就找出哪一步卡住了；有人剪完、下周不回来，就问片子好不好用、这件事是不是经常做。播放量高，不等于多了每天使用的人。</p>
+<p class="note"><strong>90 天节奏：</strong>前 30 天读数据、访谈北美创作者；31–60 天跑第一组任务实验；61–90 天把有效做法写成 playbook，复制到第二个场景或拉美一个国家。</p>
 <p class="note"><strong>拉美怎么复用：</strong>复用实验框架和指标，不直接翻译美国素材。巴西、墨西哥分开测，找当地创作者重做演示，并考虑低端机、流量成本和 WhatsApp 分享场景。</p>
 </section>
 <section class="section" id="about">
 <h2>为什么是我</h2>
 <p class="lede">我做过北美用户增长，也亲手做过短视频。我的优势是能把两件事接起来：让内容吸引对的人，再看他们有没有真正用起来。</p>
 <div class="quick profile-grid">
-<article class="move"><h3>找到对的人</h3><p>在 Ditto 做过美国高校增长和校园合作。除了把用户带进来，我也和产品团队一起看他们在哪一步流失、之后会不会回来。</p></article>
+<article class="move"><h3>找到对的人</h3><p>在 Ditto 做过美国高校增长和校园合作。除了把用户带进来，我也和产品团队一起看他们在哪一步流失、之后会不会回来。也搭建过 <strong>1,000+ 位 KOL/KOC</strong> 的创作者网络。</p></article>
 <article class="move"><h3>亲手做出能发的内容</h3><p>我有影视制作背景，也从零运营过 TikTok 账号，做到 <strong>2.4 万粉丝、40 万+ 点赞</strong>。我会从选题、开头和剪辑节奏判断一条片子值不值得发。</p></article>
 <article class="move"><h3>让试用变成真正使用</h3><p>目前负责 Teamily AI 的美国市场推广和增长。对 CapCut，我会把 AI 功能讲成一个具体任务，再看用户能不能剪完第一条、下周会不会再做一条。</p></article>
 </div>
@@ -115,12 +133,13 @@ const products=[
 ["Canva","suite","创作套件","产品提供","Video 2.0 加入更完整时间线；Magic Video 用素材、模板与音乐搭出初稿，保留品牌样式。","从已有的设计和品牌工作流切入，让小团队在做其他营销物料的地方顺手完成视频。","https://www.canva.com/newsroom/news/creative-operating-system/","Canva：Video 2.0", [1,0,2,0]],
 ["Adobe Premiere / Firefly","suite","创作套件","移动 Agent 私测","Firefly 做生成，Premiere 做精修。11 月公布移动端 Quick Cut 和 AI Assistant 私测，可生成可编辑初剪并对话修改。","用专业编辑工作流下探移动创作。可编辑 AI 初稿不是 CapCut 独有。","https://blog.adobe.com/en/publish/2026/11/10/adobe-firefly-premiere-mobile-ways-create-videos-edit-content-perfect-soundtrack-stories","Adobe：Firefly 与 Premiere Mobile", [2,1,2,0]],
 ["Runway","gen","AI 生成","官方工作流","提供文生/图生视频、对话式多镜头 Agent，以及可编排和复用的 Workflows。","优先拿下生成镜头和复杂 AI 制作，再进入后续编辑；不是播客切片的第一对照。","https://help.runwayml.com/hc/en-us/articles/37425232841875-Getting-Started-with-Generative-Video","Runway：生成式视频指南", [2,0,1,0]],
+["Higgsfield","gen","生成新镜头","竞合","AI 原生创意套件，聚合 Seedance、Kling 和 Veo 等模型。Shorts Studio 可用自己的角色和风格复刻热门短片的动作或风格；Genjutsu 可保留参考动作，替换角色或产品。也提供 AI Video Editor 和 Claude MCP 连接。","这是 AI 版的「做同款」。热门预设和社区作品让人想试，我判断它更容易吸引愿意为 AI 付费的重度创作者和营销人员。它也提供字节的 Seedance，既是生成入口的竞争者，也是模型的分发渠道。CapCut 可以学它跟热点的速度，再用更容易上手的项目和从剪辑到导出的完整流程留住大众创作者。","https://higgsfield.ai/","Higgsfield 官方网站", [2,0,1,0]],
 ["ChatGPT 等 AI 助手","chat","从对话开始","竞合","用户先描述想做什么，再由助手调用视频工具。CapCut 已提供 ChatGPT 官方连接，可以做粗剪，并打开可编辑项目。Sora 曾是视频生成和社区产品，现已停运。","如果 CapCut 只在后台被调用，用户可能不会打开 CapCut，也不一定记得是谁帮他剪的。机会是成为助手优先选用的编辑工具：对话起稿，回 CapCut 精修和导出。建议看这类项目的编辑器打开率、导出率，以及相关用户 7 天内直接打开 CapCut 的比例。","https://www.capcut.com/mcp/chatgpt","CapCut × ChatGPT 官方连接", [2,0,1,0]]
 ];
 const marker=n=>n?'<i class="'+(n===2?'dot':'support')+'" role="img" aria-label="'+(n===2?'重点竞争环节':'有代表性动作')+'"></i>':'<span aria-label="本页未强调">—</span>';
 document.querySelector('#matrix').innerHTML=[['CapCut',[2,1,2,0]],...products.map(p=>[p[0],p[8]])].map(([name,stages],i)=>'<tr class="'+(i?'':'own')+'"><th scope="row">'+name+'</th>'+stages.map(x=>'<td>'+marker(x)+'</td>').join('')+'</tr>').join('');
-const names=['meta','youtube','opus','riverside','canva','adobe','runway','chatgpt'];
-const reasons=['我本来就要发 Instagram','我剪完就要发 YouTube','我想从长片里挑出几段','我录完节目就想拿到短片','我还要做海报和品牌物料','我想用 AI 起稿，再自己精剪','我手里没有这个镜头，想先生成','我先跟 AI 说想做什么'];
+const names=['meta','youtube','opus','riverside','canva','adobe','runway','higgsfield','chatgpt'];
+const reasons=['我本来就要发 Instagram','我剪完就要发 YouTube','我想从长片里挑出几段','我录完节目就想拿到短片','我还要做海报和品牌物料','我想用 AI 起稿，再自己精剪','我手里没有这个镜头，想先生成','我想做一条正在流行的 AI 爆款同款','我先跟 AI 说想做什么'];
 const soraSource='<br><a class="source" href="https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation" target="_blank" rel="noopener">OpenAI：Sora 停运说明</a>';
 document.querySelector('#profiles').innerHTML=products.map(([name,group,label,status,action,strategy,url,source],i)=>'<article id="'+names[i]+'" class="row" data-group="'+group+'"><div><h3>'+name+'</h3><p class="why">'+reasons[i]+'</p><span class="state '+(/私测|已官宣/.test(status)?'announce':'')+'">'+status+'</span></div><div><p class="label">它做了什么</p><p>'+action+'</p><a class="source" href="'+url+'" target="_blank" rel="noopener">'+source+'</a>'+(group==='chat'?soraSource:'')+'</div><div><p class="label">对 CapCut 意味着什么</p><p>'+strategy+'</p></div></article>').join('');
 const controls=[...document.querySelectorAll('[data-filter]')];
